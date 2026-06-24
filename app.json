@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Proffera",
+    "slug": "proffera-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "se.proffera.app"
+    },
+    "android": {
+      "package": "se.proffera.app"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "scheme": "proffera"
+  }
+}
