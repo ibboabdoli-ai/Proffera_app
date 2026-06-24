@@ -1,0 +1,8 @@
+<svg width="1290" height="2796" viewBox="0 0 1290 2796" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1290" height="2796" fill="#F7F7F4"/>
+  <circle cx="645" cy="1110" r="316" fill="#17452F"/>
+  <rect x="425" y="890" width="440" height="440" rx="96" fill="#1F6A47"/>
+  <path d="M555 1192V1000H646C672 1000 693 1007 709 1021C725 1035 733 1054 733 1077C733 1100 725 1120 709 1134C693 1148 672 1155 646 1155H598V1192H555ZM598 1116H641C655 1116 666 1113 674 1106C682 1099 686 1089 686 1077C686 1065 682 1056 674 1049C666 1042 655 1039 641 1039H598V1116Z" fill="#F7F7F4"/>
+  <text x="645" y="1520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700" fill="#17452F">Proffera</text>
+  <text x="645" y="1596" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500" fill="#5E6B63">Mobil prototyp for serviceforetag</text>
+</svg>
