@@ -5,6 +5,10 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+    "primaryColor": "#17452F",
+    "splash": {
+      "backgroundColor": "#F7F7F4"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "se.proffera.app"
