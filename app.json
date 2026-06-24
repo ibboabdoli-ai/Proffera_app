@@ -4,20 +4,12 @@
     "slug": "proffera-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#0F172A"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "se.proffera.app"
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#0F172A"
-      },
       "package": "se.proffera.app"
     },
     "web": {
