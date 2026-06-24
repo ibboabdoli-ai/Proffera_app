@@ -1,72 +1,54 @@
 import React from 'react';
-import {
-  View, Text, ScrollView, TouchableOpacity, StyleSheet,
-} from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RouteProp } from '@react-navigation/native';
 import type { TjansterStackParamList } from '../navigation/AppNavigator';
 import { colors } from '../theme/colors';
+import Screen from '../components/Screen';
+import Card from '../components/Card';
+import AppButton from '../components/AppButton';
 
 type Nav = NativeStackNavigationProp<TjansterStackParamList, 'ServiceDetail'>;
 type Route = RouteProp<TjansterStackParamList, 'ServiceDetail'>;
 
 export default function ServiceDetailScreen() {
   const navigation = useNavigation<Nav>();
-  const route = useRoute<Route>();
-  const { serviceId, serviceName } = route.params;
+  const { serviceId, serviceName } = useRoute<Route>().params;
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
-      <Text style={styles.title}>{serviceName}</Text>
-      <Text style={styles.id}>ID: {serviceId}</Text>
-
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Vad ingår</Text>
+    <Screen title={serviceName}>
+      <Card label="Om tjänsten">
         <Text style={styles.body}>
-          [Platshållartext] Den här modulen hjälper ditt företag att hantera {serviceName.toLowerCase()} 
-          på ett enkelt och strukturerat sätt. Detaljer läggs till i nästa fas.
+          Den här modulen hjälper ditt företag att effektivisera {serviceName.toLowerCase()}.
+          Funktioner och integrationer kopplas stegvis i kommande faser.
         </Text>
-      </View>
+      </Card>
 
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Passar för</Text>
+      <Card label="Passar för">
         <Text style={styles.body}>
-          Små tjänsteföretag i Sverige som vill effektivisera sin kundhantering.
+          Små tjänsteföretag i Sverige inom städning, service, flytt, underhåll och 
+          lokala uppdrag som vill strukturera sin kundhantering.
         </Text>
-      </View>
+      </Card>
 
-      <TouchableOpacity
-        style={styles.bookButton}
+      <Card label="Status">
+        <Text style={styles.body}>
+          Modul-ID: <Text style={styles.mono}>{serviceId}</Text>
+          {'\n'}Innehåll och detaljer uppdateras i nästa fas.
+        </Text>
+      </Card>
+
+      <AppButton
+        label="Boka demo"
         onPress={() => navigation.navigate('Booking', { serviceId, serviceName })}
-      >
-        <Text style={styles.bookButtonText}>Boka demo</Text>
-      </TouchableOpacity>
-    </ScrollView>
+        style={{ marginTop: 8 }}
+      />
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingBottom: 40 },
-  title: { color: colors.text, fontSize: 26, fontWeight: '700', marginBottom: 4 },
-  id: { color: colors.textMuted, fontSize: 11, marginBottom: 28 },
-  section: {
-    backgroundColor: colors.surface,
-    borderRadius: 12,
-    padding: 18,
-    marginBottom: 16,
-    borderWidth: 1,
-    borderColor: colors.cardBorder,
-  },
-  sectionTitle: { color: colors.primary, fontSize: 12, fontWeight: '700', letterSpacing: 1, textTransform: 'uppercase', marginBottom: 8 },
   body: { color: colors.textMuted, fontSize: 14, lineHeight: 22 },
-  bookButton: {
-    backgroundColor: colors.primary,
-    borderRadius: 10,
-    paddingVertical: 14,
-    alignItems: 'center',
-    marginTop: 12,
-  },
-  bookButtonText: { color: '#fff', fontWeight: '700', fontSize: 16 },
+  mono: { color: colors.primary, fontWeight: '600' },
 });
