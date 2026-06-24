@@ -1,131 +1,96 @@
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { AccountStackParamList } from '../navigation/AppNavigator';
 import { colors } from '../theme/colors';
+import Screen from '../components/Screen';
+import Card from '../components/Card';
+import AppButton from '../components/AppButton';
 
 type Nav = NativeStackNavigationProp<AccountStackParamList, 'MyAccount'>;
 
+const stats = [
+  { label: 'Aktiva bokningar',   value: '—' },
+  { label: 'Leads denna månad',  value: '—' },
+  { label: 'Kunder totalt',      value: '—' },
+];
+
 export default function MyAccountScreen() {
   const navigation = useNavigation<Nav>();
+
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
-      <View style={styles.avatarRow}>
-        <View style={styles.avatar}>
-          <Text style={styles.avatarText}>P</Text>
-        </View>
-        <View>
-          <Text style={styles.accountName}>[Företagsnamn]</Text>
-          <Text style={styles.accountEmail}>[epost@foretag.se]</Text>
-          <View style={styles.planBadge}>
-            <Text style={styles.planBadgeText}>Starter — platshållare</Text>
+    <Screen title="Mitt konto">
+      {/* Profile card */}
+      <Card style={styles.profileCard}>
+        <View style={styles.avatarRow}>
+          <View style={styles.avatar}>
+            <Text style={styles.avatarLetter}>P</Text>
+          </View>
+          <View style={styles.profileInfo}>
+            <Text style={styles.profileName}>[Företagsnamn]</Text>
+            <Text style={styles.profileEmail}>[epost@foretag.se]</Text>
+            <View style={styles.planPill}>
+              <Text style={styles.planPillText}>Starter — platshållare</Text>
+            </View>
           </View>
         </View>
-      </View>
+        <Text style={styles.authNote}>
+          Inloggning kopplas när auth är aktiv (nästa fas).
+        </Text>
+      </Card>
 
-      <Text style={styles.note}>
-        Inloggning och kontoinformation kopplas när auth är aktiv i nästa fas.
-      </Text>
-
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Statistik (platshållare)</Text>
-        {[
-          { label: 'Aktiva bokningar', value: '—' },
-          { label: 'Leads denna månad', value: '—' },
-          { label: 'Kunder totalt', value: '—' },
-        ].map((row) => (
-          <View key={row.label} style={styles.statRow}>
+      {/* Stats */}
+      <Card label="Statistik (platshållare)">
+        {stats.map((row, i) => (
+          <View key={row.label} style={[styles.statRow, i < stats.length - 1 && styles.statBorder]}>
             <Text style={styles.statLabel}>{row.label}</Text>
             <Text style={styles.statValue}>{row.value}</Text>
           </View>
         ))}
-      </View>
+      </Card>
 
-      <TouchableOpacity style={styles.settingsButton} onPress={() => navigation.navigate('Settings')}>
-        <Text style={styles.settingsButtonText}>⚙  Inställningar</Text>
-      </TouchableOpacity>
+      <AppButton
+        label="⚙  Inställningar"
+        variant="outline"
+        onPress={() => navigation.navigate('Settings')}
+        style={{ marginBottom: 12 }}
+      />
 
-      <TouchableOpacity style={styles.logoutButton} disabled>
-        <Text style={styles.logoutButtonText}>[Logga ut — kopplas i nästa fas]</Text>
-      </TouchableOpacity>
-    </ScrollView>
+      <AppButton
+        label="[Logga ut — kopplas i nästa fas]"
+        variant="disabled"
+      />
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingBottom: 40 },
-  avatarRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: colors.surface,
-    borderRadius: 16,
-    padding: 18,
-    marginBottom: 14,
-    borderWidth: 1,
-    borderColor: colors.cardBorder,
-    gap: 16,
-  },
+  profileCard: { marginBottom: 14 },
+  avatarRow: { flexDirection: 'row', alignItems: 'center', gap: 16, marginBottom: 14 },
   avatar: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
+    width: 54,
+    height: 54,
+    borderRadius: 27,
     backgroundColor: colors.primary,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  avatarText: { color: '#fff', fontSize: 24, fontWeight: '700' },
-  accountName: { color: colors.text, fontSize: 16, fontWeight: '600' },
-  accountEmail: { color: colors.textMuted, fontSize: 13, marginBottom: 6 },
-  planBadge: {
+  avatarLetter: { color: '#fff', fontSize: 22, fontWeight: '700' },
+  profileInfo: { flex: 1 },
+  profileName: { color: colors.text, fontSize: 16, fontWeight: '600', marginBottom: 3 },
+  profileEmail: { color: colors.textMuted, fontSize: 13, marginBottom: 8 },
+  planPill: {
+    alignSelf: 'flex-start',
     backgroundColor: colors.primaryMuted,
     borderRadius: 6,
-    paddingHorizontal: 8,
+    paddingHorizontal: 9,
     paddingVertical: 3,
-    alignSelf: 'flex-start',
   },
-  planBadgeText: { color: colors.primary, fontSize: 11, fontWeight: '600' },
-  note: {
-    color: colors.warning,
-    fontSize: 11,
-    fontStyle: 'italic',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  section: {
-    backgroundColor: colors.surface,
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 20,
-    borderWidth: 1,
-    borderColor: colors.cardBorder,
-  },
-  sectionTitle: { color: colors.textMuted, fontSize: 11, fontWeight: '700', letterSpacing: 1, textTransform: 'uppercase', marginBottom: 14 },
-  statRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.cardBorder,
-  },
+  planPillText: { color: colors.primary, fontSize: 11, fontWeight: '600' },
+  authNote: { color: colors.warning, fontSize: 11, fontStyle: 'italic' },
+  statRow: { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 11 },
+  statBorder: { borderBottomWidth: 1, borderBottomColor: colors.cardBorder },
   statLabel: { color: colors.text, fontSize: 14 },
   statValue: { color: colors.textMuted, fontSize: 14, fontWeight: '600' },
-  settingsButton: {
-    backgroundColor: colors.surface,
-    borderRadius: 10,
-    paddingVertical: 14,
-    alignItems: 'center',
-    marginBottom: 12,
-    borderWidth: 1,
-    borderColor: colors.cardBorder,
-  },
-  settingsButtonText: { color: colors.text, fontWeight: '600', fontSize: 14 },
-  logoutButton: {
-    borderRadius: 10,
-    paddingVertical: 14,
-    alignItems: 'center',
-    opacity: 0.5,
-  },
-  logoutButtonText: { color: colors.textMuted, fontSize: 13 },
 });
