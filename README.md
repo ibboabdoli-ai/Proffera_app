@@ -19,8 +19,7 @@ Built with **React Native / Expo** and **TypeScript**.
 
 - Node.js >= 20.9.0 (`.nvmrc` = Node 22 recommended)
 - npm >= 9
-- Expo CLI (installed locally via npm — no global install needed)
-- A device or simulator with [Expo Go](https://expo.dev/client)
+- [Expo Go](https://expo.dev/client) on your phone (iOS or Android)
 
 ---
 
@@ -37,15 +36,24 @@ npm install
 ## Run
 
 ```bash
-npm start
-# or
 npx expo start
 ```
 
-Then:
-- Press `i` for iOS simulator
-- Press `a` for Android emulator
-- Scan the QR code with **Expo Go** on your phone
+Then scan the QR code with **Expo Go** on your phone.
+
+- Press `i` — iOS simulator
+- Press `a` — Android emulator
+
+### Note on `api.expo.dev` error
+
+When running in a restricted network (CI, sandbox), Expo CLI prints:
+
+```
+SyntaxError: Unexpected token 'H', "Host not i"... is not valid JSON
+```
+
+This is Expo's **version checker** being blocked. **Metro still starts** and the app works
+normally on a real device. On a normal dev machine with internet this error does not appear.
 
 ---
 
@@ -53,9 +61,20 @@ Then:
 
 ```bash
 npx tsc --noEmit
+# Expected: 0 errors
 ```
 
-Must report **0 errors** before any commit.
+---
+
+## Manual Device Test
+
+See **[docs/device-test-checklist.md](docs/device-test-checklist.md)** for the full checklist.
+
+Quick summary:
+- All 5 tabs open (Hem, Tjänster, Priser, Info, Konto)
+- All flows reachable (Home→Booking, Services→Detail→Booking, Prices→Booking, Info→Contact, Konto→Settings)
+- BookingScreen submit is **disabled** — not connected
+- No API calls made
 
 ---
 
@@ -63,46 +82,52 @@ Must report **0 errors** before any commit.
 
 ```
 Proffera_app/
-├── index.js                      ← Expo entry point
-├── App.tsx                       ← Root component
-├── app.json                      ← Expo config
-├── src/
-│   ├── theme/
-│   │   └── colors.ts             ← Design tokens
-│   ├── components/
-│   │   ├── AppButton.tsx         ← Button (primary / outline / ghost / disabled)
-│   │   ├── Card.tsx              ← Surface card with optional label
-│   │   └── Screen.tsx            ← Scroll wrapper with optional title/subtitle
-│   ├── navigation/
-│   │   └── AppNavigator.tsx      ← Bottom tabs + stack navigators
-│   └── screens/
-│       ├── HomeScreen.tsx
-│       ├── ServicesScreen.tsx
-│       ├── ServiceDetailScreen.tsx
-│       ├── PriceScreen.tsx
-│       ├── BookingScreen.tsx     ← Submit DISABLED — no API
-│       ├── ConfirmationScreen.tsx
-│       ├── ContactScreen.tsx
-│       ├── InfoScreen.tsx
-│       ├── MyAccountScreen.tsx
-│       └── SettingsScreen.tsx
-└── docs/
-    └── phase-0-audit.md          ← Phase 0 API + safety audit
+├── index.js                          ← Expo entry point
+├── App.tsx                           ← Root component
+├── app.json                          ← Expo config
+├── docs/
+│   ├── phase-0-audit.md              ← API & safety audit
+│   └── device-test-checklist.md     ← Manual test checklist
+└── src/
+    ├── theme/
+    │   └── colors.ts                 ← Design tokens
+    ├── components/
+    │   ├── AppButton.tsx             ← primary / outline / ghost / disabled
+    │   ├── Card.tsx                  ← Surface card with optional label
+    │   └── Screen.tsx                ← Scroll wrapper with title/subtitle
+    ├── navigation/
+    │   └── AppNavigator.tsx          ← 5 bottom tabs + stack navigators
+    └── screens/
+        ├── HomeScreen.tsx
+        ├── ServicesScreen.tsx
+        ├── ServiceDetailScreen.tsx
+        ├── PriceScreen.tsx
+        ├── BookingScreen.tsx         ← Submit DISABLED — no API
+        ├── ConfirmationScreen.tsx
+        ├── ContactScreen.tsx
+        ├── InfoScreen.tsx
+        ├── MyAccountScreen.tsx
+        └── SettingsScreen.tsx
 ```
 
 ---
 
-## Navigation
+## Navigation Map
 
-5 bottom tabs, each with a stack navigator:
+```
+Bottom Tabs
+├── Hem        → Home → ServiceDetail → Booking → Confirmation
+├── Tjänster   → Services → ServiceDetail → Booking → Confirmation
+├── Priser     → Prices → Booking → Confirmation
+├── Info       → Info → Contact
+└── Konto      → MyAccount → Settings
+```
 
-| Tab | Screens |
-|-----|---------|
-| Hem | Home → ServiceDetail → Booking → Confirmation |
-| Tjänster | Services → ServiceDetail → Booking → Confirmation |
-| Priser | Prices → Booking → Confirmation |
-| Info | Info → Contact |
-| Konto | MyAccount → Settings |
+---
+
+## Dependency Versions
+
+All packages are pinned to [Expo 52 bundled versions](https://github.com/expo/expo/blob/main/packages/expo/bundledNativeModules.json) for maximum Expo Go compatibility.
 
 ---
 
@@ -110,19 +135,12 @@ Proffera_app/
 
 | Feature | Status |
 |---------|--------|
-| Booking submit | ❌ Disabled — placeholder only |
+| Booking submit | ❌ Disabled — `[Submit kopplas i nästa fas]` |
 | Auth / login | ❌ Not implemented |
-| API calls | ❌ None — no fetch/axios calls exist |
+| API calls | ❌ None — no fetch/axios anywhere |
 | Real email | ❌ None |
 | Payment | ❌ None |
 | Push notifications | ❌ None |
-
----
-
-## Related Repos
-
-- **Website:** [ibboabdoli-ai/Proffera](https://github.com/ibboabdoli-ai/Proffera) — do NOT modify
-- **App:** [ibboabdoli-ai/Proffera_app](https://github.com/ibboabdoli-ai/Proffera_app) — this repo
 
 ---
 
@@ -133,3 +151,10 @@ work/proffera-app-<description>
 ```
 
 Always open a PR. Never merge without approval.
+
+---
+
+## Related Repos
+
+- **Website:** [ibboabdoli-ai/Proffera](https://github.com/ibboabdoli-ai/Proffera) — do NOT modify
+- **App:** [ibboabdoli-ai/Proffera_app](https://github.com/ibboabdoli-ai/Proffera_app) — this repo
