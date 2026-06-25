@@ -67,7 +67,7 @@ export default function PriceScreen() {
           ))}
 
           <AppButton
-            label="Kontakta oss"
+            label={`Boka demo för ${plan.name}`}
             variant={plan.highlight ? 'primary' : 'outline'}
             onPress={() =>
               navigation.navigate('Booking', { serviceId: plan.id, serviceName: plan.name })
@@ -78,8 +78,8 @@ export default function PriceScreen() {
       ))}
 
       <Text style={styles.disclaimer}>
-        Obs: priser är preliminära under MVP-fasen. Betalning och abonnemang regleras 
-        när betalningslösning är aktiv.
+        Priserna är preliminära under MVP-fasen. Ingen betalning sker i appen.{'\n'}
+        Abonnemang och avtal hanteras separat efter demo.
       </Text>
     </Screen>
   );
