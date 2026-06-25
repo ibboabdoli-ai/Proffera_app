@@ -28,20 +28,20 @@ export default function MyAccountScreen() {
             <Text style={styles.avatarLetter}>P</Text>
           </View>
           <View style={styles.profileInfo}>
-            <Text style={styles.profileName}>[Företagsnamn]</Text>
-            <Text style={styles.profileEmail}>[epost@foretag.se]</Text>
+            <Text style={styles.profileName}>Demo företag</Text>
+            <Text style={styles.profileEmail}>demo@proffera.se</Text>
             <View style={styles.planPill}>
-              <Text style={styles.planPillText}>Starter — platshållare</Text>
+              <Text style={styles.planPillText}>Starter — demo</Text>
             </View>
           </View>
         </View>
         <Text style={styles.authNote}>
-          Inloggning kopplas när auth är aktiv (nästa fas).
+          Det här är ett demokonto. Inloggning och företagsdata kopplas först när auth är aktiv.
         </Text>
       </Card>
 
       {/* Stats */}
-      <Card label="Statistik (platshållare)">
+      <Card label="Översikt (demo)">
         {stats.map((row, i) => (
           <View key={row.label} style={[styles.statRow, i < stats.length - 1 && styles.statBorder]}>
             <Text style={styles.statLabel}>{row.label}</Text>
@@ -58,7 +58,7 @@ export default function MyAccountScreen() {
       />
 
       <AppButton
-        label="[Logga ut — kopplas i nästa fas]"
+        label="Logga ut – inte aktiv i prototypen"
         variant="disabled"
       />
     </Screen>

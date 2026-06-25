@@ -14,10 +14,10 @@ export default function SettingsScreen() {
   return (
     <Screen title="Inställningar">
       <Text style={styles.note}>
-        Inställningar sparas inte i denna fas — koppling sker när auth är aktiv.
+        Inställningar sparas inte i prototypen ännu. De aktiveras när inloggning och konto är kopplade.
       </Text>
 
-      <Card label="Notiser (platshållare)">
+      <Card label="Notiser (demo)">
         {toggles.map((item, i) => (
           <View key={item.label} style={[styles.row, i < toggles.length - 1 && styles.rowBorder]}>
             <View style={styles.rowInfo}>
@@ -36,7 +36,7 @@ export default function SettingsScreen() {
       </Card>
 
       <Card label="App-information">
-        <Text style={styles.infoRow}>Version: <Text style={styles.infoVal}>1.0.0 — Phase 2 prototype</Text></Text>
+        <Text style={styles.infoRow}>Version: <Text style={styles.infoVal}>1.0.0 — Prototype</Text></Text>
         <Text style={styles.infoRow}>Plattform: <Text style={styles.infoVal}>React Native / Expo</Text></Text>
         <Text style={styles.infoRow}>API-status: <Text style={styles.infoWarning}>Ej kopplad</Text></Text>
       </Card>
