@@ -31,7 +31,7 @@ export default function BookingScreen() {
 
       {/* ─── SAFETY: submit is intentionally disabled in Phase 1 & 2 ─── */}
       <AppButton
-        label="[Submit kopplas i nästa fas]"
+        label="Skicka förfrågan – kommer snart"
         variant="disabled"
         style={{ marginBottom: 10 }}
       />
@@ -39,7 +39,7 @@ export default function BookingScreen() {
       <View style={styles.noticeBox}>
         <Text style={styles.noticeIcon}>ℹ️</Text>
         <Text style={styles.noticeText}>
-          Ingen riktig bokning skapas. API-koppling sker i kommande fas efter godkännande.
+          Det här är en prototyp. Ingen riktig bokning skickas ännu. API-koppling aktiveras först efter separat godkännande.
         </Text>
       </View>
     </Screen>
