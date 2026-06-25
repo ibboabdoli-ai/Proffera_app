@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'Finns allt klart redan?',
-    a: 'Grundflöden för leads, företag, matchning och e-postleverans finns. Produktmoduler byggs stegvis för att hålla kvalitet och kontroll.',
+    a: 'Proffera byggs stegvis. Appen visar just nu ett demo- och prototypflöde innan alla funktioner kopplas till riktiga system.',
   },
   {
     q: 'Kan Proffera anpassas för olika branscher?',
@@ -45,8 +45,7 @@ export default function InfoScreen() {
       <Text style={styles.section}>Juridiskt</Text>
       <Card label="Villkor">
         <Text style={styles.legalNote}>
-          Obs: detta är preliminära MVP-villkor och bör juridiskt granskas 
-          innan större publik lansering.
+          Det här är preliminär information för prototypen. Fullständiga villkor och policyer behöver granskas innan publik lansering.
         </Text>
         <Text style={styles.legalBody}>
           Proffera är en digital plattform under utveckling för svenska tjänsteföretag.

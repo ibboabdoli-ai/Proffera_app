@@ -12,14 +12,14 @@ export default function ConfirmationScreen() {
     <Screen noScroll>
       <View style={styles.center}>
         <Text style={styles.icon}>✅</Text>
-        <Text style={styles.title}>Tack!</Text>
+        <Text style={styles.title}>Demo slutförd</Text>
         <Text style={styles.body}>
-          Din förfrågan har tagits emot.{'\n'}Vi återkommer inom kort.
+          Demo- och bokningsflödet har visats.{'\n'}Ingen riktig förfrågan har skickats från appen ännu.
         </Text>
 
         <View style={styles.notice}>
           <Text style={styles.noticeText}>
-            Platshållare — ingen riktig bokning har skapats i denna fas.
+            Det här är en prototyp. Riktiga bokningar aktiveras först när backend är kopplad.
           </Text>
         </View>
 
