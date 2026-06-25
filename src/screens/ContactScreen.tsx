@@ -9,14 +9,14 @@ export default function ContactScreen() {
     <Screen title="Kontakt">
       <Card label="Boka demo">
         <Text style={styles.body}>
-          Fyll i bokningsformuläret via fliken Tjänster eller Priser. 
-          Vi återkommer inom en arbetsdag.
+          I prototypen kan du se hur demo- och bokningsflödet fungerar via fliken Tjänster eller Priser.
+          Inga riktiga förfrågningar skickas från appen ännu.
         </Text>
       </Card>
 
       <Card label="Allmänna frågor">
         <Text style={styles.body}>hej@proffera.se</Text>
-        <Text style={styles.note}>[E-postlänk kopplas i nästa fas]</Text>
+        <Text style={styles.note}>E-postlänk aktiveras när appen kopplas till riktiga kontaktflöden.</Text>
       </Card>
 
       <Card label="Om Proffera">
