@@ -1,167 +1,139 @@
-# Proffera App
+﻿# Proffera App
 
-Mobile prototype for [Proffera](https://proffera.se) -- a Swedish SaaS platform for service businesses.
+Mobile prototype for Proffera, a Swedish SaaS platform for service businesses.
 
-Built with **React Native / Expo** and **TypeScript**.
-
----
+Built with React Native, Expo, and TypeScript.
 
 ## Safety Notice
 
-**No API is connected.**
+No API is connected.
 No real bookings, orders, transactions, emails, or notifications are created.
 The booking submit button is intentionally disabled.
 Auth is not implemented.
 This is a UI prototype only.
 
----
+## Current Baseline
 
-## 1. Install
+- Expo SDK 54 is installed.
+- Expo Go device test has passed on iPhone.
+- Main branch is the stable branch.
+- Booking submit remains disabled.
+- No backend, API, auth, payment, or email functionality is enabled from the mobile app.
 
-```bash
+## Project Paths
+
+Proffera app:
+D:\HTML\Proffera_App\Proffera_app
+
+Do not confuse this project with:
+D:\HTML\Iboren_app
+
+## Install
+
+Run:
 git clone https://github.com/ibboabdoli-ai/Proffera_app.git
 cd Proffera_app
 npm install
-```
 
-**Requirements:**
-
-- Node.js >= 20.9.0 (Node 22 recommended)
+Requirements:
+- Node.js >= 20.9.0, Node 22 recommended
 - npm >= 9
-- [Expo Go](https://expo.dev/client) on your phone (iOS or Android)
+- Expo Go on iOS or Android
 
----
+## Local Run
 
-## 2. Run
+Preferred PowerShell flow on this machine:
+$env:Path = "C:\Users\IAI\AppData\Local\nvm\v22.23.1;$env:Path"
+node -v
+npm.cmd -v
+npx.cmd -v
+npx.cmd expo start --lan --clear --port 8082
 
-```bash
-npx expo start
-```
+If port 8081 is busy, use 8082 or 8083.
 
-Scan the QR code with **Expo Go** on your phone.
+Tunnel fallback:
+npx.cmd expo start --tunnel --clear
 
-- Press `i` -- iOS simulator
-- Press `a` -- Android emulator
+Tunnel can fail because of ngrok or network issues. That is not automatically a code problem.
 
-### Note on api.expo.dev error in CI/sandbox
+More details: docs/mobile-run-guide.md
 
-When running in a restricted network, Expo CLI prints:
+## Validation
 
-```
-SyntaxError: Unexpected token 'H', "Host not i"... is not valid JSON
-```
+Run:
+npm.cmd ci
+npx.cmd expo install --check
+npx.cmd tsc --noEmit
 
-This is Expo's version-checker being blocked at `api.expo.dev`.
-Metro still starts and the app works normally on a real device.
-On a normal dev machine with internet this error does not appear.
+Expected: 0 TypeScript errors.
 
----
+Do not run npm audit fix or npm audit fix --force unless a separate dependency maintenance phase is approved.
 
-## 3. TypeScript Check
+## Manual Device Test
 
-```bash
-npx tsc --noEmit
-```
+Latest recorded device test: docs/phase-7a-device-test.md
 
-Expected: 0 errors.
+Quick checklist:
+- App opens in Expo Go.
+- Home screen loads.
+- Bottom navigation works.
+- Booking screen opens.
+- Submit remains disabled.
+- No crash observed.
+- Text and layout fit the screen.
 
----
+## Project Structure
 
-## 4. Manual Device Test
-
-See [docs/device-test-checklist.md](docs/device-test-checklist.md) for the full checklist.
-
-Quick summary:
-
-- All 5 tabs open: Hem, Tjänster, Priser, Info, Konto
-- All flows reachable: Home, Services, Prices, Info, Konto
-- BookingScreen submit is disabled -- not connected
-- No API calls made
-
----
-
-## 5. Project Structure
-
-```
 Proffera_app/
-|-- index.js                      -- Expo entry point
-|-- App.tsx                       -- Root component
-|-- app.json                      -- Expo config
+|-- index.js
+|-- App.tsx
+|-- app.json
+|-- README.md
 |-- docs/
-|   |-- phase-0-audit.md          -- API and safety audit
-|   \-- device-test-checklist.md -- Manual test checklist
-\-- src/
-    |-- theme/
-    |   \-- colors.ts             -- Design tokens
-    |-- components/
-    |   |-- AppButton.tsx         -- primary / outline / ghost / disabled
-    |   |-- Card.tsx              -- Surface card with optional label
-    |   \-- Screen.tsx            -- Scroll wrapper with title and subtitle
-    |-- navigation/
-    |   \-- AppNavigator.tsx      -- 5 bottom tabs and stack navigators
-    \-- screens/
-        |-- HomeScreen.tsx
-        |-- ServicesScreen.tsx
-        |-- ServiceDetailScreen.tsx
-        |-- PriceScreen.tsx
-        |-- BookingScreen.tsx     -- Submit DISABLED, no API
-        |-- ConfirmationScreen.tsx
-        |-- ContactScreen.tsx
-        |-- InfoScreen.tsx
-        |-- MyAccountScreen.tsx
-        \-- SettingsScreen.tsx
-```
+|   |-- mobile-run-guide.md
+|   |-- phase-7a-device-test.md
+|-- src/
+|   |-- components/
+|   |-- navigation/
+|   |-- screens/
+|   |-- theme/
 
----
+## Navigation Map
 
-## 6. Navigation Map
+Bottom tabs:
+- Hem
+- Tjänster
+- Priser
+- Info
+- Konto
 
-```
-Bottom Tabs
-  Hem       -> Home -> ServiceDetail -> Booking -> Confirmation
-  Tjänster  -> Services -> ServiceDetail -> Booking -> Confirmation
-  Priser    -> Prices -> Booking -> Confirmation
-  Info      -> Info -> Contact
-  Konto     -> MyAccount -> Settings
-```
+Main flows:
+- Home -> Service detail -> Booking -> Confirmation
+- Services -> Service detail -> Booking -> Confirmation
+- Prices -> Booking -> Confirmation
+- Info -> Contact
+- Account -> Settings
 
----
+## What Is Not Connected
 
-## 7. Dependency Versions
+| Feature | Status |
+|---|---|
+| Booking submit | Disabled |
+| Auth / login | Not implemented |
+| API calls | None |
+| Real email | None |
+| Payment | None |
+| Push notifications | None |
 
-All packages are pinned to Expo 52 bundled versions for maximum Expo Go compatibility.
+## Related Repos
 
-Reference: https://github.com/expo/expo/blob/main/packages/expo/bundledNativeModules.json
+- Website: https://github.com/ibboabdoli-ai/Proffera -- do not modify from this app phase.
+- App: https://github.com/ibboabdoli-ai/Proffera_app -- this repo.
 
----
+## Branch and PR Rules
 
-## 8. What Is NOT Connected
-
-| Feature           | Status                                      |
-|-------------------|---------------------------------------------|
-| Booking submit    | Disabled -- [Submit kopplas i nästa fas]    |
-| Auth / login      | Not implemented                             |
-| API calls         | None -- no fetch/axios anywhere             |
-| Real email        | None                                        |
-| Payment           | None                                        |
-| Push notifications| None                                        |
-
----
-
-## 9. Related Repos
-
-- **Website:** https://github.com/ibboabdoli-ai/Proffera -- do NOT modify
-- **App:** https://github.com/ibboabdoli-ai/Proffera_app -- this repo
-
----
-
-## 10. Branch and PR Rules
-
-Branch naming convention:
-
-```
+Use branch names like:
 work/proffera-app-<description>
-```
 
 Always work on a feature branch.
 Open a PR.
