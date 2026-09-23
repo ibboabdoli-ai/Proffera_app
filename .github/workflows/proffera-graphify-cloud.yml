@@ -1,0 +1,84 @@
+name: Proffera Graphify Cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Proffera branch, tag, or commit to scan"
+        required: false
+        default: "main"
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/proffera-graphify-cloud.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: proffera-graphify-cloud
+  cancel-in-progress: true
+
+jobs:
+  build-graph:
+    name: Build Proffera knowledge graph
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GRAPHIFY_VERSION: "0.9.42"
+      PROFFERA_REF: ${{ github.event.inputs.ref || 'main' }}
+
+    steps:
+      - name: Clone public Proffera source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --filter=blob:none https://github.com/ibboabdoli-ai/Proffera.git Proffera
+          git -C Proffera fetch --depth=1 origin "$PROFFERA_REF"
+          git -C Proffera checkout --detach FETCH_HEAD
+          echo "PROFFERA_SHA=$(git -C Proffera rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Install pinned Graphify
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv .graphify-venv
+          . .graphify-venv/bin/activate
+          python -m pip install --disable-pip-version-check "graphifyy==$GRAPHIFY_VERSION"
+          graphify --version | tee graphify-version.txt
+          graphify --version | grep -F "$GRAPHIFY_VERSION"
+
+      - name: Build code-only graph
+        shell: bash
+        run: |
+          set -euo pipefail
+          . .graphify-venv/bin/activate
+          cd Proffera
+          graphify extract . --code-only
+          test -s graphify-out/graph.json
+          {
+            echo "Proffera SHA: $PROFFERA_SHA"
+            echo "Graphify version: $GRAPHIFY_VERSION"
+            echo "Generated UTC: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > graphify-out/CLOUD_BUILD.txt
+
+      - name: Smoke-test graph query
+        shell: bash
+        run: |
+          set -euo pipefail
+          . .graphify-venv/bin/activate
+          cd Proffera
+          graphify query "How does authentication and workspace authorization flow through Proffera?" \
+            | tee graphify-out/SMOKE_QUERY.txt
+
+      - name: Upload graph artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: proffera-graphify-${{ env.PROFFERA_SHA }}
+          path: |
+            Proffera/graphify-out/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 6
