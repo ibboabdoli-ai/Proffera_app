@@ -13,6 +13,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/proffera-graphify-cloud.yml"
+  issues:
+    types: [opened]
 
 permissions:
   contents: read
@@ -23,6 +25,7 @@ concurrency:
 
 jobs:
   build-graph:
+    if: github.event_name != 'issues' || startsWith(github.event.issue.title, '[graphify-run]')
     name: Build Proffera knowledge graph
     runs-on: ubuntu-latest
     timeout-minutes: 30
