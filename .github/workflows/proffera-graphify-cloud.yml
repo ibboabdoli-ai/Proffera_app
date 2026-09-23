@@ -15,7 +15,7 @@ on:
       - ".github/workflows/proffera-graphify-cloud.yml"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: proffera-graphify-cloud
@@ -72,6 +72,28 @@ jobs:
           cd Proffera
           graphify query "How does authentication and workspace authorization flow through Proffera?" \
             | tee graphify-out/SMOKE_QUERY.txt
+
+      - name: Publish latest graph to graphify-cache
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git clone --branch graphify-cache --single-branch \
+            "https://x-access-token:$GH_TOKEN@github.com/${{ github.repository }}.git" graph-cache
+          rm -rf graph-cache/graphify-out
+          mkdir -p graph-cache/graphify-out
+          cp -a Proffera/graphify-out/. graph-cache/graphify-out/
+          cd graph-cache
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add graphify-out
+          if git diff --cached --quiet; then
+            echo "Graph cache already matches this build."
+          else
+            git commit -m "chore(graphify): refresh Proffera graph ${PROFFERA_SHA:0:12}"
+            git push origin HEAD:graphify-cache
+          fi
 
       - name: Upload graph artifact
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
