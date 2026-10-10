@@ -333,78 +333,6 @@
       "tests_database_url_test_testenvironment"
     ],
     "4": [
-      "src_app_api_dashboard_gallery_upload_route",
-      "src_app_api_dashboard_gallery_upload_route_allowedimagetypes",
-      "src_app_api_dashboard_gallery_upload_route_allowedvideotypes",
-      "src_app_api_dashboard_gallery_upload_route_displaystyles",
-      "src_app_api_dashboard_gallery_upload_route_post",
-      "src_app_api_dashboard_gallery_upload_route_redirecttogallery",
-      "src_app_api_dashboard_gallery_upload_route_runtime",
-      "src_app_api_dashboard_restaurang_upload_route",
-      "src_app_api_dashboard_restaurang_upload_route_cleanupuploadedblob",
-      "src_app_api_dashboard_restaurang_upload_route_post",
-      "src_app_api_dashboard_restaurang_upload_route_runtime",
-      "src_app_api_gallery_media_id_route",
-      "src_app_api_gallery_media_id_route_cacheheaders",
-      "src_app_api_gallery_media_id_route_dynamic",
-      "src_app_api_gallery_media_id_route_externalredirect",
-      "src_app_api_gallery_media_id_route_get",
-      "src_app_api_gallery_media_id_route_hasblobcredentials",
-      "src_app_api_gallery_media_id_route_migratelegacydatabasemedia",
-      "src_app_api_gallery_media_id_route_notfound",
-      "src_app_api_gallery_media_id_route_runtime",
-      "src_app_api_primeview_booking_photo_route",
-      "src_app_api_primeview_booking_photo_route_dynamic",
-      "src_app_api_primeview_booking_photo_route_get",
-      "src_app_api_primeview_booking_photo_route_notfound",
-      "src_app_api_primeview_booking_photo_route_runtime",
-      "src_app_dashboard_galleri_page",
-      "src_app_dashboard_galleri_page_dynamic",
-      "src_app_dashboard_galleri_page_galleryaction",
-      "src_app_dashboard_galleri_page_gallerymanagerpage",
-      "src_app_dashboard_galleri_page_gallerysearchparams",
-      "src_app_dashboard_galleri_page_localizedhref",
-      "src_app_dashboard_installningar_foretagssida_page",
-      "src_app_dashboard_installningar_foretagssida_page_dynamic",
-      "src_app_dashboard_installningar_foretagssida_page_pageurl",
-      "src_app_dashboard_installningar_foretagssida_page_publicbusinesssettingspage",
-      "src_app_dashboard_installningar_foretagssida_page_savepublicbusinesssettings",
-      "src_app_dashboard_installningar_funktioner_page",
-      "src_app_dashboard_installningar_funktioner_page_dynamic",
-      "src_app_dashboard_installningar_funktioner_page_featuresettingspage",
-      "src_app_dashboard_installningar_funktioner_page_starttrial",
-      "src_app_dashboard_installningar_funktioner_page_togglefeature",
-      "src_app_dashboard_kunder_id_page_getactiveworkspaceid",
-      "src_app_dashboard_onboarding_page_onboardingpage",
-      "src_app_dashboard_restaurang_page_restaurantadminpage",
-      "src_app_dashboard_uppdrag_id_layout",
-      "src_app_dashboard_uppdrag_id_layout_servicejobdetaillayout",
-      "src_lib_company_directory_provider_activation_requiremanageableworkspace",
-      "src_lib_company_directory_sole_trader_owner_requiremanageableworkspace",
-      "src_lib_dashboard_booking_status_getactiveworkspaceaccess",
-      "src_lib_restaurant_image_type",
-      "src_lib_restaurant_image_type_ascii",
-      "src_lib_restaurant_image_type_detectrestaurantimagemime",
-      "src_lib_restaurant_image_type_restaurantimagemime",
-      "src_lib_restaurant_image_type_test",
-      "src_lib_website_gallery_db",
-      "src_lib_website_gallery_db_creategalleryitem",
-      "src_lib_website_gallery_db_creategalleryiteminput",
-      "src_lib_website_gallery_db_gallerymediametadata",
-      "src_lib_website_gallery_db_gallerymediarecord",
-      "src_lib_website_gallery_db_getdashboardgalleryitems",
-      "src_lib_website_gallery_db_getgallerymedia",
-      "src_lib_website_gallery_db_getgallerymediabase64",
-      "src_lib_website_gallery_db_getgallerymediametadata",
-      "src_lib_website_gallery_db_isgallerymediaid",
-      "src_lib_website_gallery_db_updategalleryitem",
-      "src_lib_website_gallery_db_updategallerymediastorage",
-      "src_lib_workspace_access_canmanageworkspacesettings",
-      "src_lib_workspace_access_getuserworkspaceaccess",
-      "src_lib_workspace_entitlements_setworkspacefeatureenabled",
-      "src_lib_workspace_entitlements_startworkspacefeaturetrial"
-    ],
-    "5": [
       "src_app_foretag_workspace_page",
       "src_app_foretag_workspace_page_dynamic",
       "src_app_foretag_workspace_page_generatemetadata",
@@ -474,6 +402,76 @@
       "tests_public_business_marketplace_design_contract_test_rendercompany",
       "tests_public_business_marketplace_design_contract_test_renderservice",
       "tests_public_business_marketplace_design_contract_test_serviceresultfixture"
+    ],
+    "5": [
+      "src_app_api_dashboard_gallery_upload_route",
+      "src_app_api_dashboard_gallery_upload_route_allowedimagetypes",
+      "src_app_api_dashboard_gallery_upload_route_allowedvideotypes",
+      "src_app_api_dashboard_gallery_upload_route_displaystyles",
+      "src_app_api_dashboard_gallery_upload_route_post",
+      "src_app_api_dashboard_gallery_upload_route_redirecttogallery",
+      "src_app_api_dashboard_gallery_upload_route_runtime",
+      "src_app_api_dashboard_restaurang_upload_route",
+      "src_app_api_dashboard_restaurang_upload_route_cleanupuploadedblob",
+      "src_app_api_dashboard_restaurang_upload_route_post",
+      "src_app_api_dashboard_restaurang_upload_route_runtime",
+      "src_app_api_dashboard_service_jobs_attachments_route",
+      "src_app_api_dashboard_service_jobs_attachments_route_get",
+      "src_app_api_dashboard_service_jobs_attachments_route_jobredirect",
+      "src_app_api_dashboard_service_jobs_attachments_route_post",
+      "src_app_api_dashboard_service_jobs_attachments_route_runtime",
+      "src_app_api_primeview_booking_photo_route",
+      "src_app_api_primeview_booking_photo_route_dynamic",
+      "src_app_api_primeview_booking_photo_route_get",
+      "src_app_api_primeview_booking_photo_route_notfound",
+      "src_app_api_primeview_booking_photo_route_runtime",
+      "src_app_dashboard_galleri_page",
+      "src_app_dashboard_galleri_page_dynamic",
+      "src_app_dashboard_galleri_page_galleryaction",
+      "src_app_dashboard_galleri_page_gallerymanagerpage",
+      "src_app_dashboard_galleri_page_gallerysearchparams",
+      "src_app_dashboard_galleri_page_localizedhref",
+      "src_app_dashboard_installningar_foretagssida_page",
+      "src_app_dashboard_installningar_foretagssida_page_dynamic",
+      "src_app_dashboard_installningar_foretagssida_page_pageurl",
+      "src_app_dashboard_installningar_foretagssida_page_publicbusinesssettingspage",
+      "src_app_dashboard_installningar_foretagssida_page_savepublicbusinesssettings",
+      "src_app_dashboard_installningar_funktioner_page",
+      "src_app_dashboard_installningar_funktioner_page_dynamic",
+      "src_app_dashboard_installningar_funktioner_page_featuresettingspage",
+      "src_app_dashboard_installningar_funktioner_page_starttrial",
+      "src_app_dashboard_installningar_funktioner_page_togglefeature",
+      "src_app_dashboard_kunder_id_page_getactiveworkspaceid",
+      "src_app_dashboard_onboarding_page_onboardingpage",
+      "src_app_dashboard_restaurang_page_restaurantadminpage",
+      "src_app_dashboard_uppdrag_id_attachment_manager",
+      "src_app_dashboard_uppdrag_id_attachment_manager_formatbytes",
+      "src_app_dashboard_uppdrag_id_attachment_manager_servicejobattachmentmanager",
+      "src_app_dashboard_uppdrag_id_layout",
+      "src_app_dashboard_uppdrag_id_layout_servicejobdetaillayout",
+      "src_lib_company_directory_provider_activation_requiremanageableworkspace",
+      "src_lib_company_directory_sole_trader_owner_requiremanageableworkspace",
+      "src_lib_dashboard_booking_status_getactiveworkspaceaccess",
+      "src_lib_restaurant_image_type",
+      "src_lib_restaurant_image_type_ascii",
+      "src_lib_restaurant_image_type_detectrestaurantimagemime",
+      "src_lib_restaurant_image_type_restaurantimagemime",
+      "src_lib_restaurant_image_type_test",
+      "src_lib_website_gallery_db_creategalleryitem",
+      "src_lib_website_gallery_db_getdashboardgalleryitems",
+      "src_lib_website_gallery_db_updategalleryitem",
+      "src_lib_workspace_access_canmanageworkspacesettings",
+      "src_lib_workspace_access_getuserworkspaceaccess",
+      "src_lib_workspace_entitlements_setworkspacefeatureenabled",
+      "src_lib_workspace_entitlements_startworkspacefeaturetrial",
+      "src_lib_workspace_service_job_attachments_db",
+      "src_lib_workspace_service_job_attachments_db_connectionstring",
+      "src_lib_workspace_service_job_attachments_db_createdashboardservicejobattachment",
+      "src_lib_workspace_service_job_attachments_db_dashboardservicejobattachment",
+      "src_lib_workspace_service_job_attachments_db_getdashboardservicejobattachments",
+      "src_lib_workspace_service_job_attachments_db_getdashboardservicejobattachmenturl",
+      "src_lib_workspace_service_job_attachments_db_getsqlclient",
+      "src_lib_workspace_service_job_attachments_db_getworkspaceaccess"
     ],
     "6": [
       "src_app_admin_leverans_page",
@@ -676,7 +674,6 @@
       "scripts_supervisor_failure_memory_checkedcurrent",
       "scripts_supervisor_failure_memory_cmp",
       "scripts_supervisor_failure_memory_condition",
-      "scripts_supervisor_failure_memory_decideretryrecovery",
       "scripts_supervisor_failure_memory_fail",
       "scripts_supervisor_failure_memory_finaljob",
       "scripts_supervisor_failure_memory_fingerprintevidence",
@@ -709,10 +706,10 @@
       "scripts_supervisor_failure_memory_reentries",
       "scripts_supervisor_failure_memory_releasepreparedretryintent",
       "scripts_supervisor_failure_memory_replacement",
-      "scripts_supervisor_failure_memory_repository",
       "scripts_supervisor_failure_memory_retrysource",
       "scripts_supervisor_failure_memory_retrytarget",
       "scripts_supervisor_failure_memory_scope",
+      "scripts_supervisor_failure_memory_serializememory",
       "scripts_supervisor_failure_memory_serializevalidatedmemory",
       "scripts_supervisor_failure_memory_snapshot",
       "scripts_supervisor_failure_memory_source",
@@ -722,7 +719,6 @@
       "scripts_supervisor_failure_memory_taskid",
       "scripts_supervisor_failure_memory_timestamp",
       "scripts_supervisor_failure_memory_timestampfloorsecond",
-      "scripts_supervisor_failure_memory_transitionretryintent",
       "scripts_supervisor_failure_memory_uncertainty",
       "scripts_supervisor_failure_memory_validateintent",
       "scripts_supervisor_failure_memory_validateintents",
@@ -730,6 +726,66 @@
       "scripts_supervisor_failure_memory_validaterecord"
     ],
     "10": [
+      "src_app_admin_audit_page",
+      "src_app_admin_audit_page_adminauditpage",
+      "src_app_admin_audit_page_formatauditvalue",
+      "src_app_admin_saas_page",
+      "src_app_admin_saas_page_adminsaaspage",
+      "src_app_admin_saas_page_metriccard",
+      "src_app_admin_saas_page_workspacewarnings",
+      "src_app_admin_support_sessionid_actions",
+      "src_app_admin_support_sessionid_actions_updateworkspacecontactaction",
+      "src_app_admin_support_sessionid_contact_edit_form",
+      "src_app_admin_support_sessionid_contact_edit_form_contacteditform",
+      "src_app_admin_support_sessionid_page",
+      "src_app_admin_support_sessionid_page_adminsupportpage",
+      "src_app_admin_workspaces_actions",
+      "src_app_admin_workspaces_actions_downgradesupportsessionaction",
+      "src_app_admin_workspaces_actions_elevatesupportsessionaction",
+      "src_app_admin_workspaces_actions_endsupportsessionaction",
+      "src_app_admin_workspaces_actions_startsupportsessionaction",
+      "src_app_admin_workspaces_page",
+      "src_app_admin_workspaces_page_adminworkspacespage",
+      "src_app_admin_workspaces_page_healthbadges",
+      "src_app_admin_workspaces_workspaceid_page",
+      "src_app_admin_workspaces_workspaceid_page_adminworkspaceoverviewpage",
+      "src_app_admin_workspaces_workspaceid_page_featureactionform",
+      "src_app_admin_workspaces_workspaceid_page_featuremessages",
+      "src_app_admin_workspaces_workspaceid_page_statcard",
+      "src_lib_admin_audit",
+      "src_lib_admin_audit_adminauditfilters",
+      "src_lib_admin_audit_listactivesupportsessions",
+      "src_lib_admin_audit_listadminauditfilteroptions",
+      "src_lib_admin_audit_listadminauditlogs",
+      "src_lib_admin_audit_safedate",
+      "src_lib_admin_audit_safetext",
+      "src_lib_admin_audit_safeuuid",
+      "src_lib_admin_saas_dashboard",
+      "src_lib_admin_saas_dashboard_getadminsaasdashboard",
+      "src_lib_admin_workspace_directory",
+      "src_lib_admin_workspace_directory_adminworkspacedirectoryfilters",
+      "src_lib_admin_workspace_directory_listadminworkspacedirectory",
+      "src_lib_admin_workspace_directory_safetext",
+      "src_lib_admin_workspace_mutations",
+      "src_lib_admin_workspace_mutations_cleanoptional",
+      "src_lib_admin_workspace_mutations_updateworkspacecontactineditsession",
+      "src_lib_admin_workspace_overview",
+      "src_lib_admin_workspace_overview_getadminworkspaceoverview",
+      "src_lib_admin_workspace_overview_isuuid",
+      "src_lib_company_directory_sole_trader_admin",
+      "src_lib_company_directory_sole_trader_admin_listpendingsoletraderdirectoryclaims",
+      "src_lib_platform_admin",
+      "src_lib_platform_admin_downgradesupportsession",
+      "src_lib_platform_admin_elevatesupportsession",
+      "src_lib_platform_admin_endsupportsession",
+      "src_lib_platform_admin_getplatformadmin",
+      "src_lib_platform_admin_getsupportsession",
+      "src_lib_platform_admin_listactivesupportsessions",
+      "src_lib_platform_admin_listadminauditlogs",
+      "src_lib_platform_admin_listadminworkspaces",
+      "src_lib_platform_admin_startreadonlysupportsession"
+    ],
+    "11": [
       "node_child_process",
       "scripts_supervisor_ci_autofix_strategy_memory",
       "scripts_supervisor_ci_autofix_strategy_memory_activeciautofixstarts",
@@ -788,7 +844,7 @@
       "tests_supervisor_ci_autofix_strategy_history_test_workflowjob",
       "tests_supervisor_ci_autofix_strategy_history_test_workflowstep"
     ],
-    "11": [
+    "12": [
       "scripts_supervisor_review_repair_strategy_memory",
       "scripts_supervisor_review_repair_strategy_memory_activereviewrepairstarts",
       "scripts_supervisor_review_repair_strategy_memory_canonical",
@@ -847,7 +903,7 @@
       "tests_supervisor_review_repair_strategy_history_test_trustedcomment",
       "tests_supervisor_review_repair_strategy_history_test_workflowstep"
     ],
-    "12": [
+    "13": [
       "src_app_areas_page",
       "src_app_areas_page_bluectatext",
       "src_app_areas_page_metadata",
@@ -906,7 +962,7 @@
       "tests_primeview_seo_test",
       "tests_primeview_service_areas_test"
     ],
-    "13": [
+    "14": [
       "src_app_mina_bokningar_token_bookingid_boka_om_page",
       "src_app_mina_bokningar_token_bookingid_boka_om_page_dynamic",
       "src_app_mina_bokningar_token_bookingid_boka_om_page_errorsen",
@@ -965,7 +1021,7 @@
       "tests_workspace_gallery_and_themes_test",
       "tests_workspace_gallery_and_themes_test_source"
     ],
-    "14": [
+    "15": [
       "src_app_api_e2e_marketplace_email_route_markerfor",
       "src_app_api_e2e_marketplace_fixture_route",
       "src_app_api_e2e_marketplace_fixture_route_customerstate",
@@ -1023,63 +1079,63 @@
       "tests_preview_marketplace_e2e_guard_test_signedtoken",
       "tests_preview_marketplace_e2e_guard_test_signingfixture"
     ],
-    "15": [
-      "src_app_admin_audit_page",
-      "src_app_admin_audit_page_adminauditpage",
-      "src_app_admin_audit_page_formatauditvalue",
-      "src_app_admin_saas_page",
-      "src_app_admin_saas_page_adminsaaspage",
-      "src_app_admin_saas_page_metriccard",
-      "src_app_admin_saas_page_workspacewarnings",
-      "src_app_admin_support_sessionid_actions",
-      "src_app_admin_support_sessionid_actions_updateworkspacecontactaction",
-      "src_app_admin_support_sessionid_contact_edit_form",
-      "src_app_admin_support_sessionid_contact_edit_form_contacteditform",
-      "src_app_admin_support_sessionid_page",
-      "src_app_admin_support_sessionid_page_adminsupportpage",
-      "src_app_admin_workspaces_actions",
-      "src_app_admin_workspaces_actions_downgradesupportsessionaction",
-      "src_app_admin_workspaces_actions_elevatesupportsessionaction",
-      "src_app_admin_workspaces_actions_endsupportsessionaction",
-      "src_app_admin_workspaces_actions_startsupportsessionaction",
-      "src_app_admin_workspaces_page",
-      "src_app_admin_workspaces_page_adminworkspacespage",
-      "src_app_admin_workspaces_page_healthbadges",
-      "src_app_api_platform_admin_workspace_features_route",
-      "src_app_api_platform_admin_workspace_features_route_allowedmodes",
-      "src_app_api_platform_admin_workspace_features_route_post",
-      "src_app_api_platform_admin_workspace_features_route_redirecttoworkspace",
-      "src_lib_admin_audit",
-      "src_lib_admin_audit_adminauditfilters",
-      "src_lib_admin_audit_listactivesupportsessions",
-      "src_lib_admin_audit_listadminauditfilteroptions",
-      "src_lib_admin_audit_listadminauditlogs",
-      "src_lib_admin_audit_safedate",
-      "src_lib_admin_audit_safetext",
-      "src_lib_admin_audit_safeuuid",
-      "src_lib_admin_saas_dashboard",
-      "src_lib_admin_saas_dashboard_getadminsaasdashboard",
-      "src_lib_admin_workspace_directory",
-      "src_lib_admin_workspace_directory_adminworkspacedirectoryfilters",
-      "src_lib_admin_workspace_directory_listadminworkspacedirectory",
-      "src_lib_admin_workspace_directory_safetext",
-      "src_lib_admin_workspace_mutations",
-      "src_lib_admin_workspace_mutations_cleanoptional",
-      "src_lib_admin_workspace_mutations_updateworkspacecontactineditsession",
-      "src_lib_company_directory_sole_trader_admin",
-      "src_lib_company_directory_sole_trader_admin_listpendingsoletraderdirectoryclaims",
-      "src_lib_platform_admin",
-      "src_lib_platform_admin_downgradesupportsession",
-      "src_lib_platform_admin_elevatesupportsession",
-      "src_lib_platform_admin_endsupportsession",
-      "src_lib_platform_admin_getplatformadmin",
-      "src_lib_platform_admin_getsupportsession",
-      "src_lib_platform_admin_listactivesupportsessions",
-      "src_lib_platform_admin_listadminauditlogs",
-      "src_lib_platform_admin_listadminworkspaces",
-      "src_lib_platform_admin_startreadonlysupportsession"
-    ],
     "16": [
+      "scripts_supervisor_failure_memory_decideretryrecovery",
+      "scripts_supervisor_failure_memory_memoryidentity",
+      "scripts_supervisor_failure_memory_transitionretryintent",
+      "scripts_supervisor_failure_memory_upgradememory",
+      "scripts_supervisor_final_gate_live",
+      "scripts_supervisor_final_gate_live_coderabbitstillclean",
+      "scripts_supervisor_final_gate_live_comments",
+      "scripts_supervisor_final_gate_live_ensurev2",
+      "scripts_supervisor_final_gate_live_failbeforepost",
+      "scripts_supervisor_final_gate_live_fetchjob",
+      "scripts_supervisor_final_gate_live_fetchprhead",
+      "scripts_supervisor_final_gate_live_fetchrecovery",
+      "scripts_supervisor_final_gate_live_fetchrecoveryfortarget",
+      "scripts_supervisor_final_gate_live_fetchrun",
+      "scripts_supervisor_final_gate_live_fetchsource",
+      "scripts_supervisor_final_gate_live_gh",
+      "scripts_supervisor_final_gate_live_ghjson",
+      "scripts_supervisor_final_gate_live_historicalrun",
+      "scripts_supervisor_final_gate_live_includedresponse",
+      "scripts_supervisor_final_gate_live_isonow",
+      "scripts_supervisor_final_gate_live_jobfromrun",
+      "scripts_supervisor_final_gate_live_main",
+      "scripts_supervisor_final_gate_live_markuncertain",
+      "scripts_supervisor_final_gate_live_memoryinput",
+      "scripts_supervisor_final_gate_live_pages",
+      "scripts_supervisor_final_gate_live_persist",
+      "scripts_supervisor_final_gate_live_postrerun",
+      "scripts_supervisor_final_gate_live_recoveracceptedintents",
+      "scripts_supervisor_final_gate_live_runlivefinalgate",
+      "scripts_supervisor_final_gate_live_samesource",
+      "scripts_supervisor_final_gate_live_validatedsource",
+      "scripts_supervisor_final_gate_live_verifyidentity",
+      "scripts_supervisor_final_gate_live_verifypreparedcomment",
+      "scripts_supervisor_final_gate_memory",
+      "scripts_supervisor_final_gate_memory_acceptfinalgateretry",
+      "scripts_supervisor_final_gate_memory_cleancoderabbitcomment",
+      "scripts_supervisor_final_gate_memory_decidefinalgateretry",
+      "scripts_supervisor_final_gate_memory_ensurefinalgatememory",
+      "scripts_supervisor_final_gate_memory_finalgatememoryidentity",
+      "scripts_supervisor_final_gate_memory_listfinalgateretryintents",
+      "scripts_supervisor_final_gate_memory_main",
+      "scripts_supervisor_final_gate_memory_markfinalgateuncertain",
+      "scripts_supervisor_final_gate_memory_materialtext",
+      "scripts_supervisor_final_gate_memory_normalizefinalgateevidence",
+      "scripts_supervisor_final_gate_memory_persistence",
+      "scripts_supervisor_final_gate_memory_providerunavailable",
+      "scripts_supervisor_final_gate_memory_readmemory",
+      "scripts_supervisor_final_gate_memory_recoveracceptedfinalgateintent",
+      "scripts_supervisor_final_gate_memory_releasefinalgatepreparedintent",
+      "scripts_supervisor_final_gate_memory_retrysource",
+      "scripts_supervisor_final_gate_memory_sha256",
+      "scripts_supervisor_final_gate_memory_strategy",
+      "tests_supervisor_failure_memory_test_transition",
+      "tests_supervisor_failure_memory_test_v2"
+    ],
+    "17": [
       "src_app_api_public_booking_slug_staff_route",
       "src_app_api_public_booking_slug_staff_route_dynamic",
       "src_app_api_public_booking_slug_staff_route_get",
@@ -1133,60 +1189,6 @@
       "tests_company_directory_full_revalidation_inactive_scb_test_normalizequery",
       "tests_company_directory_full_revalidation_inactive_scb_test_sqlcall",
       "tests_company_directory_full_revalidation_inactive_scb_test_sqlcalls"
-    ],
-    "17": [
-      "scripts_supervisor_failure_memory_memoryidentity",
-      "scripts_supervisor_failure_memory_serializememory",
-      "scripts_supervisor_failure_memory_upgradememory",
-      "scripts_supervisor_final_gate_live",
-      "scripts_supervisor_final_gate_live_coderabbitstillclean",
-      "scripts_supervisor_final_gate_live_comments",
-      "scripts_supervisor_final_gate_live_ensurev2",
-      "scripts_supervisor_final_gate_live_failbeforepost",
-      "scripts_supervisor_final_gate_live_fetchjob",
-      "scripts_supervisor_final_gate_live_fetchprhead",
-      "scripts_supervisor_final_gate_live_fetchrecovery",
-      "scripts_supervisor_final_gate_live_fetchrecoveryfortarget",
-      "scripts_supervisor_final_gate_live_fetchrun",
-      "scripts_supervisor_final_gate_live_fetchsource",
-      "scripts_supervisor_final_gate_live_gh",
-      "scripts_supervisor_final_gate_live_ghjson",
-      "scripts_supervisor_final_gate_live_historicalrun",
-      "scripts_supervisor_final_gate_live_includedresponse",
-      "scripts_supervisor_final_gate_live_isonow",
-      "scripts_supervisor_final_gate_live_jobfromrun",
-      "scripts_supervisor_final_gate_live_main",
-      "scripts_supervisor_final_gate_live_markuncertain",
-      "scripts_supervisor_final_gate_live_memoryinput",
-      "scripts_supervisor_final_gate_live_pages",
-      "scripts_supervisor_final_gate_live_persist",
-      "scripts_supervisor_final_gate_live_postrerun",
-      "scripts_supervisor_final_gate_live_recoveracceptedintents",
-      "scripts_supervisor_final_gate_live_runlivefinalgate",
-      "scripts_supervisor_final_gate_live_samesource",
-      "scripts_supervisor_final_gate_live_validatedsource",
-      "scripts_supervisor_final_gate_live_verifyidentity",
-      "scripts_supervisor_final_gate_live_verifypreparedcomment",
-      "scripts_supervisor_final_gate_memory",
-      "scripts_supervisor_final_gate_memory_acceptfinalgateretry",
-      "scripts_supervisor_final_gate_memory_cleancoderabbitcomment",
-      "scripts_supervisor_final_gate_memory_decidefinalgateretry",
-      "scripts_supervisor_final_gate_memory_ensurefinalgatememory",
-      "scripts_supervisor_final_gate_memory_finalgatememoryidentity",
-      "scripts_supervisor_final_gate_memory_listfinalgateretryintents",
-      "scripts_supervisor_final_gate_memory_main",
-      "scripts_supervisor_final_gate_memory_markfinalgateuncertain",
-      "scripts_supervisor_final_gate_memory_materialtext",
-      "scripts_supervisor_final_gate_memory_normalizefinalgateevidence",
-      "scripts_supervisor_final_gate_memory_persistence",
-      "scripts_supervisor_final_gate_memory_providerunavailable",
-      "scripts_supervisor_final_gate_memory_readmemory",
-      "scripts_supervisor_final_gate_memory_recoveracceptedfinalgateintent",
-      "scripts_supervisor_final_gate_memory_releasefinalgatepreparedintent",
-      "scripts_supervisor_final_gate_memory_retrysource",
-      "scripts_supervisor_final_gate_memory_sha256",
-      "scripts_supervisor_final_gate_memory_strategy",
-      "tests_supervisor_failure_memory_test_v2"
     ],
     "18": [
       "src_app_aktivera_token_actions",
@@ -2013,6 +2015,50 @@
       "tests_company_directory_publication_scb_reuse_test_stalerefreshsql"
     ],
     "35": [
+      "src_app_admin_foretag_directory_lagg_till_foretag_actions",
+      "src_app_admin_foretag_directory_lagg_till_foretag_actions_addcompanydirectoryfromadminaction",
+      "src_app_admin_foretag_directory_lagg_till_foretag_actions_errorstatus",
+      "src_app_admin_foretag_directory_lagg_till_foretag_actions_statuspath",
+      "src_app_admin_foretag_directory_lagg_till_foretag_page",
+      "src_app_admin_foretag_directory_lagg_till_foretag_page_adminaddcompanydirectorypage",
+      "src_app_admin_foretag_directory_lagg_till_foretag_page_dynamic",
+      "src_app_admin_foretag_directory_lagg_till_foretag_page_first",
+      "src_app_admin_foretag_directory_lagg_till_foretag_page_statusmessages",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_diagnosticresult",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_dynamic",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_first",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_oauthdiagnosticpage",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_props",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_replaceorganizationnumber",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_rundiagnostic",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_saferesponsedetail",
+      "src_app_admin_foretag_directory_oauth_diagnostic_page_safetext",
+      "src_app_admin_foretag_directory_scb_page",
+      "src_app_admin_foretag_directory_scb_page_companydirectoryscbadminpage",
+      "src_app_admin_foretag_directory_scb_page_dynamic",
+      "src_app_admin_foretag_directory_scb_page_firstparam",
+      "src_app_admin_foretag_directory_scb_page_pageprops",
+      "src_app_admin_foretag_directory_scb_page_refreshscbenrichmentaction",
+      "src_app_admin_foretag_directory_scb_page_resultmessages",
+      "src_app_admin_foretag_directory_scb_page_text",
+      "src_app_admin_foretag_directory_search_preview_review_page",
+      "src_app_admin_foretag_directory_search_preview_review_page_directorygeocodingreviewpage",
+      "src_app_admin_foretag_directory_search_preview_review_page_dynamic",
+      "src_app_admin_foretag_directory_search_preview_review_page_geocodereason",
+      "src_app_admin_foretag_directory_search_preview_review_page_reviewrow",
+      "src_app_preview_bolagsverket_diagnostic_page",
+      "src_app_preview_bolagsverket_diagnostic_page_dynamic",
+      "src_app_preview_bolagsverket_diagnostic_page_fullstring",
+      "src_app_preview_bolagsverket_diagnostic_page_previewbolagsverketdiagnosticpage",
+      "src_app_preview_bolagsverket_diagnostic_page_props",
+      "src_app_preview_bolagsverket_diagnostic_page_replaceorg",
+      "src_app_preview_bolagsverket_diagnostic_page_rundiagnostic",
+      "src_app_preview_bolagsverket_diagnostic_page_saferesponsedetail",
+      "src_app_preview_bolagsverket_diagnostic_page_safetext",
+      "src_lib_admin_authorization_requiresuperadmin"
+    ],
+    "36": [
       "src_app_dashboard_installningar_workspace_market_fields",
       "src_app_dashboard_installningar_workspace_market_fields_workspacemarketfields",
       "src_app_dashboard_installningar_workspace_market_fields_workspacemarketfieldsprops",
@@ -2056,7 +2102,7 @@
       "tests_booking_reminder_workspace_join_test_mocks",
       "tests_booking_reminder_workspace_join_test_state"
     ],
-    "36": [
+    "37": [
       "scripts_supervisor_metrics",
       "scripts_supervisor_metrics_addstate",
       "scripts_supervisor_metrics_aggregatemetrics",
@@ -2099,7 +2145,7 @@
       "tests_supervisor_metrics_test_sevenattempts",
       "tests_supervisor_metrics_test_step"
     ],
-    "37": [
+    "38": [
       "any",
       "bufferedreader",
       "connection",
@@ -2141,7 +2187,7 @@
       "src_lib_company_directory_source_path",
       "zipextfile"
     ],
-    "38": [
+    "39": [
       "node_crypto",
       "src_app_offert_jamfor_token_actions",
       "src_app_offert_jamfor_token_actions_localefrom",
@@ -2183,12 +2229,13 @@
       "tests_marketplace_customer_comparison_token_persistence_test_queryvalues",
       "tests_marketplace_customer_comparison_token_persistence_test_sqlresponses"
     ],
-    "39": [
+    "40": [
       "scripts_supervisor_failure_memory_creatememory",
       "scripts_supervisor_failure_memory_failure_categories",
       "scripts_supervisor_failure_memory_limits",
       "scripts_supervisor_failure_memory_mergeobservation",
       "scripts_supervisor_failure_memory_readtrustedmemory",
+      "scripts_supervisor_failure_memory_repository",
       "scripts_supervisor_failure_memory_retry_integration",
       "tests_supervisor_ci_autofix_strategy_history_test_record",
       "tests_supervisor_failure_memory_test",
@@ -2213,7 +2260,6 @@
       "tests_supervisor_failure_memory_test_signal",
       "tests_supervisor_failure_memory_test_strategy",
       "tests_supervisor_failure_memory_test_target",
-      "tests_supervisor_failure_memory_test_transition",
       "tests_supervisor_failure_memory_workflow_transport_test",
       "tests_supervisor_failure_memory_workflow_transport_test_canonicalbody",
       "tests_supervisor_failure_memory_workflow_transport_test_expectcanonicaldirecttransport",
@@ -2225,7 +2271,7 @@
       "tests_supervisor_failure_memory_workflow_transport_test_yamlload",
       "tests_supervisor_review_repair_strategy_history_test_failurerecord"
     ],
-    "40": [
+    "41": [
       "src_app_boka_primeview_primeview_booking_form",
       "src_app_boka_primeview_primeview_booking_form_bookinghour",
       "src_app_boka_primeview_primeview_booking_form_bookingservice",
@@ -2267,7 +2313,7 @@
       "tests_public_booking_availability_test_hours",
       "tests_public_booking_availability_test_service"
     ],
-    "41": [
+    "42": [
       "src_app_dashboard_bokningar_id_page",
       "src_app_dashboard_bokningar_id_page_bookingdetailpage",
       "src_app_dashboard_bokningar_id_page_bookingdetailpageprops",
@@ -2309,7 +2355,7 @@
       "src_lib_dashboard_db_dashboardbookingdetail",
       "tests_dashboard_accessibility_regressions_test"
     ],
-    "42": [
+    "43": [
       "src_app_dashboard_bokningar_ny_page",
       "src_app_dashboard_bokningar_ny_page_bookingstatuses",
       "src_app_dashboard_bokningar_ny_page_createbookingaction",
@@ -2351,7 +2397,7 @@
       "src_lib_dashboard_db_tonumber",
       "src_lib_dashboard_db_totext"
     ],
-    "43": [
+    "44": [
       "src_app_api_dashboard_review_invitations_route",
       "src_app_api_dashboard_review_invitations_route_dynamic",
       "src_app_api_dashboard_review_invitations_route_invitationerror",
@@ -2392,7 +2438,7 @@
       "src_lib_verified_review_invitations_verifiedreviewinvitationpreview",
       "src_lib_verified_review_token_hashverifiedreviewtoken"
     ],
-    "44": [
+    "45": [
       "src_app_dashboard_bokningar_layout",
       "src_app_dashboard_bokningar_layout_bookingslayout",
       "src_app_dashboard_galleri_layout",
@@ -2433,7 +2479,7 @@
       "src_lib_workspace_module_access_modulefeaturekeys",
       "src_lib_workspace_module_access_readenabledfeaturekeys"
     ],
-    "45": [
+    "46": [
       "src_app_dashboard_salon_page",
       "src_app_dashboard_salon_page_metadata",
       "src_app_dashboard_salon_page_salondashboardpage",
@@ -2474,7 +2520,7 @@
       "src_lib_salon_demo_salonreviews",
       "src_lib_salon_demo_salonservices"
     ],
-    "46": [
+    "47": [
       "src_components_company_directory_public_directory_results",
       "src_components_company_directory_public_directory_results_cansearchallsweden",
       "src_components_company_directory_public_directory_results_haslocationconstraint",
@@ -2515,7 +2561,7 @@
       "tests_marketplace_results_ui_contract_test_response",
       "tests_marketplace_results_ui_contract_test_source"
     ],
-    "47": [
+    "48": [
       "src_lib_company_directory_geocoding",
       "src_lib_company_directory_geocoding_addresscomponents",
       "src_lib_company_directory_geocoding_addressdetaildiagnostic",
@@ -2556,7 +2602,7 @@
       "tests_company_directory_geocoding_scb_input_guards_test_profileaddress",
       "tests_company_directory_geocoding_scb_input_guards_test_singlescbworkplace"
     ],
-    "48": [
+    "49": [
       "src_app_api_public_business_contact_route",
       "src_app_api_public_business_contact_route_contactschema",
       "src_app_api_public_business_contact_route_dynamic",
@@ -2596,7 +2642,7 @@
       "tests_workspace_feature_policy_test",
       "tests_workspace_feature_policy_test_now"
     ],
-    "49": [
+    "50": [
       "src_components_company_directory_public_directory_copy_directorycategorylabels",
       "src_features_quote_request_form_copy",
       "src_features_quote_request_form_copy_quoteformcopy",
@@ -2636,7 +2682,7 @@
       "tests_service_catalog_test",
       "tests_service_catalog_test_expecteddirectoryslugs"
     ],
-    "50": [
+    "51": [
       "src_app_dashboard_installningar_actions",
       "src_app_dashboard_installningar_actions_getformtext",
       "src_app_dashboard_installningar_actions_isemaillike",
@@ -2675,7 +2721,7 @@
       "src_lib_workspace_settings_db_updatedashboardworkspacesettings",
       "src_lib_workspace_settings_db_updatedashboardworkspacesettingsinput"
     ],
-    "51": [
+    "52": [
       "src_app_dashboard_marknadsplats_layout",
       "src_app_dashboard_marknadsplats_layout_marketplacelayout",
       "src_lib_company_directory_provider_activation",
@@ -2714,7 +2760,7 @@
       "tests_company_directory_sole_trader_marketplace_release_integration_test_waitforpostgres",
       "tests_company_directory_sole_trader_privacy_contract_test"
     ],
-    "52": [
+    "53": [
       "src_app_admin_foretag_directory_marketplace_readiness_page",
       "src_app_admin_foretag_directory_marketplace_readiness_page_addresstext",
       "src_app_admin_foretag_directory_marketplace_readiness_page_directorymarketplacereadinesspage",
@@ -2752,7 +2798,7 @@
       "src_lib_company_directory_marketplace_readiness_uniqueaddresses",
       "src_lib_company_directory_marketplace_readiness_workplacecandidate"
     ],
-    "53": [
+    "54": [
       "src_app_api_cron_company_directory_published_revalidation_route",
       "src_app_api_cron_company_directory_published_revalidation_route_dynamic",
       "src_app_api_cron_company_directory_published_revalidation_route_get",
@@ -2790,7 +2836,7 @@
       "tests_company_directory_published_revalidation_contract_test_transport",
       "tests_company_directory_published_revalidation_contract_test_workplace"
     ],
-    "54": [
+    "55": [
       "src_app_boka_slug_booking_media_guard",
       "src_app_boka_slug_booking_media_guard_bookingmediaguard",
       "src_app_boka_slug_layout",
@@ -2828,7 +2874,7 @@
       "src_lib_website_gallery_db_getpublishedgalleryitems",
       "src_lib_website_gallery_db_mapitem"
     ],
-    "55": [
+    "56": [
       "src_app_dashboard_uppdrag_id_page",
       "src_app_dashboard_uppdrag_id_page_copy",
       "src_app_dashboard_uppdrag_id_page_dynamic",
@@ -2866,7 +2912,7 @@
       "src_lib_workspace_service_jobs_db_transitiondashboardworkspaceservicejob",
       "src_lib_workspace_service_jobs_db_workspaceservicejobsourcetype"
     ],
-    "56": [
+    "57": [
       "src_features_matching_directory_guest",
       "src_features_matching_directory_guest_candidaterow",
       "src_features_matching_directory_guest_directoryguestmatchradius",
@@ -2904,7 +2950,7 @@
       "src_features_matching_directory_guest_text",
       "src_lib_service_catalog_servicecategoryforquotecategory"
     ],
-    "57": [
+    "58": [
       "src_app_api_cron_company_directory_batch_pilot_route",
       "src_app_api_cron_company_directory_batch_pilot_route_dynamic",
       "src_app_api_cron_company_directory_batch_pilot_route_get",
@@ -2941,7 +2987,7 @@
       "src_lib_company_directory_discovery_queue_targetedpilotprofileid",
       "src_lib_company_directory_discovery_queue_text"
     ],
-    "58": [
+    "59": [
       "src_app_api_public_directory_claim_email_send_route",
       "src_app_api_public_directory_claim_email_send_route_compacttext",
       "src_app_api_public_directory_claim_email_send_route_post",
@@ -2978,7 +3024,7 @@
       "tests_company_directory_claim_email_concurrency_test_verifyrequest",
       "tests_company_directory_claim_email_concurrency_test_wrongcodefor"
     ],
-    "59": [
+    "60": [
       "src_app_aterstall_losenord_page",
       "src_app_aterstall_losenord_page_copy",
       "src_app_aterstall_losenord_page_first",
@@ -3015,7 +3061,7 @@
       "tests_password_reset_ui_contract_test",
       "tests_password_reset_ui_contract_test_source"
     ],
-    "60": [
+    "61": [
       "src_lib_company_directory_policy",
       "src_lib_company_directory_policy_assessdirectorycandidate",
       "src_lib_company_directory_policy_builddirectorypublicslug",
@@ -3052,7 +3098,7 @@
       "tests_marketplace_home_contract_test",
       "tests_marketplace_home_contract_test_source"
     ],
-    "61": [
+    "62": [
       "src_lib_company_directory_scb_provider",
       "src_lib_company_directory_scb_provider_addressfromrecord",
       "src_lib_company_directory_scb_provider_coordinatesfromrecord",
@@ -3089,7 +3135,7 @@
       "src_lib_company_directory_scb_provider_unknownrecord",
       "src_lib_company_directory_scb_provider_valuefor"
     ],
-    "62": [
+    "63": [
       "src_app_admin_billing_actions",
       "src_app_admin_billing_actions_extendtrialaction",
       "src_app_admin_billing_layout",
@@ -3125,7 +3171,7 @@
       "src_lib_admin_billing_source_billing_source_of_truth",
       "tests_admin_billing_policy_test"
     ],
-    "63": [
+    "64": [
       "src_app_admin_foretag_layout",
       "src_app_admin_foretag_layout_layout",
       "src_app_admin_layout",
@@ -3161,7 +3207,7 @@
       "tests_admin_ui_auth_boundary_test_requestheaders",
       "tests_admin_ui_auth_boundary_test_source"
     ],
-    "64": [
+    "65": [
       "src_app_api_marketplace_customer_service_job_token_route",
       "src_app_api_marketplace_customer_service_job_token_route_dynamic",
       "src_app_api_marketplace_customer_service_job_token_route_post",
@@ -3197,7 +3243,7 @@
       "tests_marketplace_servicejob_review_rematch_test_transactionbuilder",
       "tests_marketplace_servicejob_review_rematch_test_verifiedreviewsubmission"
     ],
-    "65": [
+    "66": [
       "src_app_api_marketplace_guest_quote_token_route",
       "src_app_api_marketplace_guest_quote_token_route_amountminor",
       "src_app_api_marketplace_guest_quote_token_route_dynamic",
@@ -3233,7 +3279,7 @@
       "tests_marketplace_guest_human_view_test_querytext",
       "tests_marketplace_guest_human_view_test_transactionalsqlresponses"
     ],
-    "66": [
+    "67": [
       "src_features_quote_request_localized_quote_request_form",
       "src_features_quote_request_localized_quote_request_form_discardlanguagedraft",
       "src_features_quote_request_localized_quote_request_form_localizedquoterequestform",
@@ -3269,7 +3315,7 @@
       "src_features_quote_request_step_smart_details",
       "src_features_quote_request_step_smart_details_quotesmartdetailsstep"
     ],
-    "67": [
+    "68": [
       "src_app_api_cron_booking_reminders_route",
       "src_app_api_cron_booking_reminders_route_authorizedschedulerrequest",
       "src_app_api_cron_booking_reminders_route_bearermatches",
@@ -3304,7 +3350,7 @@
       "tests_operations_scheduler_route_test_request",
       "tests_operations_scheduler_route_test_source"
     ],
-    "68": [
+    "69": [
       "src_app_api_foretag_route",
       "src_app_api_foretag_route_post",
       "src_app_api_foretag_route_registrationerror",
@@ -3339,7 +3385,7 @@
       "src_lib_public_form_rate_limit_secret_resolvepublicformratelimitsecret",
       "tests_public_form_rate_limit_secret_test"
     ],
-    "69": [
+    "70": [
       "src_app_en_categories_page",
       "src_app_en_categories_page_categories",
       "src_app_en_categories_page_englishcategoriespage",
@@ -3374,7 +3420,7 @@
       "tests_bilingual_top_level_metadata_test",
       "tests_bilingual_top_level_metadata_test_source"
     ],
-    "70": [
+    "71": [
       "src_app_en_pricing_page",
       "src_app_en_pricing_page_englishpricingpage",
       "src_app_en_pricing_page_metadata",
@@ -3408,40 +3454,6 @@
       "tests_billing_plans_test",
       "tests_marketing_features_pricing_contract_test",
       "tests_marketing_features_pricing_contract_test_source"
-    ],
-    "71": [
-      "src_app_admin_foretag_directory_lagg_till_foretag_actions",
-      "src_app_admin_foretag_directory_lagg_till_foretag_actions_addcompanydirectoryfromadminaction",
-      "src_app_admin_foretag_directory_lagg_till_foretag_actions_errorstatus",
-      "src_app_admin_foretag_directory_lagg_till_foretag_actions_statuspath",
-      "src_app_admin_foretag_directory_lagg_till_foretag_page",
-      "src_app_admin_foretag_directory_lagg_till_foretag_page_adminaddcompanydirectorypage",
-      "src_app_admin_foretag_directory_lagg_till_foretag_page_dynamic",
-      "src_app_admin_foretag_directory_lagg_till_foretag_page_first",
-      "src_app_admin_foretag_directory_lagg_till_foretag_page_statusmessages",
-      "src_app_admin_foretag_directory_scb_page",
-      "src_app_admin_foretag_directory_scb_page_companydirectoryscbadminpage",
-      "src_app_admin_foretag_directory_scb_page_dynamic",
-      "src_app_admin_foretag_directory_scb_page_firstparam",
-      "src_app_admin_foretag_directory_scb_page_pageprops",
-      "src_app_admin_foretag_directory_scb_page_refreshscbenrichmentaction",
-      "src_app_admin_foretag_directory_scb_page_resultmessages",
-      "src_app_admin_foretag_directory_scb_page_text",
-      "src_app_admin_foretag_directory_search_preview_review_page",
-      "src_app_admin_foretag_directory_search_preview_review_page_directorygeocodingreviewpage",
-      "src_app_admin_foretag_directory_search_preview_review_page_dynamic",
-      "src_app_admin_foretag_directory_search_preview_review_page_geocodereason",
-      "src_app_admin_foretag_directory_search_preview_review_page_reviewrow",
-      "src_app_preview_bolagsverket_diagnostic_page",
-      "src_app_preview_bolagsverket_diagnostic_page_dynamic",
-      "src_app_preview_bolagsverket_diagnostic_page_fullstring",
-      "src_app_preview_bolagsverket_diagnostic_page_previewbolagsverketdiagnosticpage",
-      "src_app_preview_bolagsverket_diagnostic_page_props",
-      "src_app_preview_bolagsverket_diagnostic_page_replaceorg",
-      "src_app_preview_bolagsverket_diagnostic_page_rundiagnostic",
-      "src_app_preview_bolagsverket_diagnostic_page_saferesponsedetail",
-      "src_app_preview_bolagsverket_diagnostic_page_safetext",
-      "src_lib_admin_authorization_requiresuperadmin"
     ],
     "72": [
       "src_app_api_reviews_token_route",
@@ -5432,31 +5444,6 @@
       "tests_marketplace_guest_admin_invite_route_test_mocks"
     ],
     "139": [
-      "src_app_api_dashboard_service_jobs_attachments_route",
-      "src_app_api_dashboard_service_jobs_attachments_route_get",
-      "src_app_api_dashboard_service_jobs_attachments_route_jobredirect",
-      "src_app_api_dashboard_service_jobs_attachments_route_post",
-      "src_app_api_dashboard_service_jobs_attachments_route_runtime",
-      "src_app_dashboard_uppdrag_id_attachment_manager",
-      "src_app_dashboard_uppdrag_id_attachment_manager_formatbytes",
-      "src_app_dashboard_uppdrag_id_attachment_manager_servicejobattachmentmanager",
-      "src_lib_service_job_attachment_policy",
-      "src_lib_service_job_attachment_policy_sanitizeservicejobattachmentname",
-      "src_lib_service_job_attachment_policy_servicejobattachmentmaxbytes",
-      "src_lib_service_job_attachment_policy_servicejobattachmenttypes",
-      "src_lib_service_job_attachment_policy_servicejobattachmentvalidation",
-      "src_lib_service_job_attachment_policy_test",
-      "src_lib_service_job_attachment_policy_validateservicejobattachment",
-      "src_lib_workspace_service_job_attachments_db",
-      "src_lib_workspace_service_job_attachments_db_connectionstring",
-      "src_lib_workspace_service_job_attachments_db_createdashboardservicejobattachment",
-      "src_lib_workspace_service_job_attachments_db_dashboardservicejobattachment",
-      "src_lib_workspace_service_job_attachments_db_getdashboardservicejobattachments",
-      "src_lib_workspace_service_job_attachments_db_getdashboardservicejobattachmenturl",
-      "src_lib_workspace_service_job_attachments_db_getsqlclient",
-      "src_lib_workspace_service_job_attachments_db_getworkspaceaccess"
-    ],
-    "140": [
       "src_app_dashboard_installningar_booking_link_card",
       "src_app_dashboard_installningar_booking_link_card_bookinglinkcard",
       "src_app_dashboard_installningar_booking_link_card_bookinglinkcardprops",
@@ -5481,7 +5468,7 @@
       "tests_preview_billing_safety_contract_test_renderbilling",
       "tests_preview_billing_safety_contract_test_starterplan"
     ],
-    "141": [
+    "140": [
       "src_app_dashboard_kunder_ny_page",
       "src_app_dashboard_kunder_ny_page_createcustomeraction",
       "src_app_dashboard_kunder_ny_page_customerstatuses",
@@ -5506,7 +5493,7 @@
       "src_lib_service_taxonomy_serviceitem",
       "src_lib_service_taxonomy_servicetaxonomy"
     ],
-    "142": [
+    "141": [
       "src_app_layout",
       "src_app_layout_hankengrotesk",
       "src_app_layout_metadata",
@@ -5531,7 +5518,7 @@
       "src_lib_analytics_posthog_privacy_persistedanalyticsconsentstate",
       "src_lib_public_site_domains_isanalyticsplatformhost"
     ],
-    "143": [
+    "142": [
       "src_components_analytics_posthog_analytics",
       "src_components_analytics_posthog_analytics_capturemarketplaceevent",
       "src_components_analytics_posthog_analytics_loadposthog",
@@ -5556,7 +5543,7 @@
       "tests_posthog_analytics_privacy_test_source",
       "tests_posthog_ingestion_token_test"
     ],
-    "144": [
+    "143": [
       "src_lib_analytics_posthog_privacy",
       "src_lib_analytics_posthog_privacy_allowedanalyticssources",
       "src_lib_analytics_posthog_privacy_allowedanonymousidentityproperties",
@@ -5581,7 +5568,7 @@
       "tests_posthog_analytics_final_review_test",
       "tests_posthog_analytics_final_review_test_source"
     ],
-    "145": [
+    "144": [
       "src_lib_company_directory_geocoding_directorygeocodingnomatchreason",
       "src_lib_lantmateriet_address_verification",
       "src_lib_lantmateriet_address_verification_authorizationheader",
@@ -5606,7 +5593,7 @@
       "src_lib_lantmateriet_address_verification_verificationtimeouterror_constructor",
       "src_lib_lantmateriet_address_verification_verifycustomeraddress"
     ],
-    "146": [
+    "145": [
       "src_app_api_stripe_connect_onboard_route",
       "src_app_api_stripe_connect_onboard_route_paymentsurl",
       "src_app_api_stripe_connect_onboard_route_post",
@@ -5630,7 +5617,7 @@
       "src_lib_workspace_payments_db_workspacepaymentaccount",
       "src_lib_workspace_service_job_payments_getpayableworkspaceservicejobs"
     ],
-    "147": [
+    "146": [
       "src_app_dashboard_installningar_settings_locale_boundary",
       "src_app_dashboard_installningar_settings_locale_boundary_exacttranslations",
       "src_app_dashboard_installningar_settings_locale_boundary_settingslocaleboundary",
@@ -5654,7 +5641,7 @@
       "src_components_dashboard_dashboard_stripe_checkout_fix_plan_labels",
       "src_lib_restaurant_site_db_hasrestaurantsite"
     ],
-    "148": [
+    "147": [
       "better_auth",
       "neondatabase_serverless",
       "next",
@@ -5677,7 +5664,7 @@
       "vercel_blob",
       "zod"
     ],
-    "149": [
+    "148": [
       "src_app_admin_foretag_claims_sole_trader_actions",
       "src_app_admin_foretag_claims_sole_trader_actions_approvesoletraderclaimaction",
       "src_app_admin_foretag_claims_sole_trader_actions_rejectsoletraderclaimaction",
@@ -5700,7 +5687,7 @@
       "tests_company_directory_sole_trader_owner_test_mocks",
       "tests_company_directory_sole_trader_owner_test_officialrecord"
     ],
-    "150": [
+    "149": [
       "src_app_admin_foretag_directory_details_page",
       "src_app_admin_foretag_directory_details_page_address",
       "src_app_admin_foretag_directory_details_page_detailhref",
@@ -5723,7 +5710,7 @@
       "tests_company_directory_admin_details_contract_test_normalize",
       "tests_company_directory_admin_details_contract_test_offsetlog"
     ],
-    "151": [
+    "150": [
       "src_app_admin_platform_admins_actions",
       "src_app_admin_platform_admins_actions_saveplatformadminaction",
       "src_app_admin_platform_admins_page",
@@ -5746,7 +5733,7 @@
       "tests_platform_admin_workspace_guard_test",
       "tests_platform_admin_workspace_guard_test_source"
     ],
-    "152": [
+    "151": [
       "src_app_dashboard_installningar_layout",
       "src_app_dashboard_installningar_layout_isactive",
       "src_app_dashboard_installningar_layout_settingslayout",
@@ -5769,7 +5756,7 @@
       "tests_navigation_prefetch_contract_test_dashboardshellfortest",
       "tests_navigation_prefetch_contract_test_fakestorage"
     ],
-    "153": [
+    "152": [
       "src_proxy",
       "src_proxy_allowadminwithpath",
       "src_proxy_allowdashboardwithnoindex",
@@ -5792,7 +5779,7 @@
       "tests_proxy_test_request",
       "tests_proxy_test_resolvepubliccustomdomainmock"
     ],
-    "154": [
+    "153": [
       "tests_company_directory_claim_email_concurrency_integration_test",
       "tests_company_directory_claim_email_concurrency_integration_test_currentclaim",
       "tests_company_directory_claim_email_concurrency_integration_test_deferred",
@@ -5815,7 +5802,7 @@
       "tests_company_directory_claim_email_concurrency_integration_test_withsql",
       "tests_company_directory_claim_email_concurrency_integration_test_wrongcodefor"
     ],
-    "155": [
+    "154": [
       "scripts_supervisor_worker_handoff_acquirereservationmutex",
       "scripts_supervisor_worker_handoff_assertcontrolidentity",
       "scripts_supervisor_worker_handoff_assertreservationmutex",
@@ -5837,7 +5824,7 @@
       "scripts_supervisor_worker_handoff_workerreservationio",
       "scripts_supervisor_worker_handoff_workersuccessfulmergeheads"
     ],
-    "156": [
+    "155": [
       "src_app_api_signup_provision_route",
       "src_app_api_signup_provision_route_isallowedorigin",
       "src_app_api_signup_provision_route_post",
@@ -5859,7 +5846,7 @@
       "src_lib_company_directory_marketplace_claim_releaseownreservation",
       "src_lib_company_directory_marketplace_claim_tryautoprovisionmarketplacecompanyclaim"
     ],
-    "157": [
+    "156": [
       "src_instrumentation_client",
       "src_instrumentation_client_onroutertransitionstart",
       "src_lib_observability_sentry_privacy",
@@ -5881,7 +5868,7 @@
       "tests_observability_foundation_test_pull",
       "tests_sentry_privacy_short_identifier_test"
     ],
-    "158": [
+    "157": [
       "tests_proffera_standing_automerge_test",
       "tests_proffera_standing_automerge_test_aireviewfixture",
       "tests_proffera_standing_automerge_test_aireviewshellblock",
@@ -5903,7 +5890,7 @@
       "tests_proffera_standing_automerge_test_workflow",
       "tests_proffera_standing_automerge_test_workflowrungateshellblock"
     ],
-    "159": [
+    "158": [
       "tests_supervisor_final_gate_memory_test",
       "tests_supervisor_final_gate_memory_test_at",
       "tests_supervisor_final_gate_memory_test_baseinput",
@@ -5925,7 +5912,7 @@
       "tests_supervisor_final_gate_memory_test_source",
       "tests_supervisor_final_gate_memory_test_target"
     ],
-    "160": [
+    "159": [
       "server",
       "src_app_api_marketplace_guest_quote_token_opt_out_route",
       "src_app_api_marketplace_guest_quote_token_opt_out_route_dynamic",
@@ -5946,7 +5933,7 @@
       "tests_marketplace_guest_quote_rate_limits_test_token_a",
       "tests_marketplace_guest_quote_rate_limits_test_token_b"
     ],
-    "161": [
+    "160": [
       "src_app_admin_foretag_claims_actions",
       "src_app_admin_foretag_claims_actions_approvedirectoryclaimaction",
       "src_app_admin_foretag_claims_actions_rejectdirectoryclaimaction",
@@ -5967,7 +5954,7 @@
       "src_lib_company_directory_existing_workspace_claim",
       "src_lib_company_directory_existing_workspace_claim_finalizecompanydirectoryclaimintoexistingworkspace"
     ],
-    "162": [
+    "161": [
       "src_app_aktivera_token_activation_form",
       "src_app_aktivera_token_activation_form_activationform",
       "src_app_aktivera_token_activation_form_activationformprops",
@@ -5988,7 +5975,7 @@
       "src_features_company_workspace_member_invitation_claimworkspacememberinvitation",
       "src_features_company_workspace_member_invitation_getworkspacememberinvitation"
     ],
-    "163": [
+    "162": [
       "src_app_dashboard_marknadsplats_page",
       "src_app_dashboard_marknadsplats_page_activatemarketplaceserviceaction",
       "src_app_dashboard_marknadsplats_page_claimhref",
@@ -6009,7 +5996,7 @@
       "tests_dashboard_marketplace_service_base_behavior_test_renderedtext",
       "tests_dashboard_marketplace_service_base_behavior_test_walk"
     ],
-    "164": [
+    "163": [
       "src_app_review_token_verified_review_form",
       "src_app_review_token_verified_review_form_copy",
       "src_app_review_token_verified_review_form_submissionmessage",
@@ -6030,7 +6017,7 @@
       "tests_verified_review_form_interaction_test_renderreviewform",
       "tests_verified_review_form_interaction_test_textcontent"
     ],
-    "165": [
+    "164": [
       "src_features_email_review_invitation_email",
       "src_features_email_review_invitation_email_brevoresponse",
       "src_features_email_review_invitation_email_buildprimeviewreviewinvitationemail",
@@ -6051,7 +6038,7 @@
       "tests_verified_review_preview_email_isolation_test",
       "tests_verified_review_preview_email_isolation_test_invitation"
     ],
-    "166": [
+    "165": [
       "src_features_quote_request_schema",
       "src_features_quote_request_schema_hasvalidcoordinates",
       "src_features_quote_request_schema_initialquoterequest",
@@ -6072,7 +6059,7 @@
       "tests_quote_request_verified_address_persistence_test_mocks",
       "tests_quote_request_verified_address_persistence_test_verified"
     ],
-    "167": [
+    "166": [
       "src_lib_company_directory_geocoding_builddirectoryaddresssearchtext",
       "src_lib_company_directory_geocoding_classifydirectorygeocodingbatcherror",
       "src_lib_company_directory_geocoding_cleandirectorystreetaddress",
@@ -6093,7 +6080,7 @@
       "src_lib_company_directory_geocoding_shouldretrylegacydirectorynomatch",
       "src_lib_company_directory_geocoding_test"
     ],
-    "168": [
+    "167": [
       "src_app_admin_billing_alerts_page",
       "src_app_admin_billing_alerts_page_adminbillingalertspage",
       "src_app_admin_billing_alerts_page_alertlabels",
@@ -6112,6 +6099,26 @@
       "tests_admin_billing_alerts_test",
       "tests_admin_billing_alerts_test_indays",
       "tests_admin_billing_alerts_test_now"
+    ],
+    "168": [
+      "src_app_api_gallery_media_id_route",
+      "src_app_api_gallery_media_id_route_cacheheaders",
+      "src_app_api_gallery_media_id_route_dynamic",
+      "src_app_api_gallery_media_id_route_externalredirect",
+      "src_app_api_gallery_media_id_route_get",
+      "src_app_api_gallery_media_id_route_hasblobcredentials",
+      "src_app_api_gallery_media_id_route_migratelegacydatabasemedia",
+      "src_app_api_gallery_media_id_route_notfound",
+      "src_app_api_gallery_media_id_route_runtime",
+      "src_lib_website_gallery_db",
+      "src_lib_website_gallery_db_creategalleryiteminput",
+      "src_lib_website_gallery_db_gallerymediametadata",
+      "src_lib_website_gallery_db_gallerymediarecord",
+      "src_lib_website_gallery_db_getgallerymedia",
+      "src_lib_website_gallery_db_getgallerymediabase64",
+      "src_lib_website_gallery_db_getgallerymediametadata",
+      "src_lib_website_gallery_db_isgallerymediaid",
+      "src_lib_website_gallery_db_updategallerymediastorage"
     ],
     "169": [
       "src_app_boka_verifiera_id_page",
@@ -6306,6 +6313,24 @@
       "src_app_api_cron_company_directory_discovery_ingest_route_probeofficialsourcechange"
     ],
     "179": [
+      "src_app_api_platform_admin_workspace_features_route",
+      "src_app_api_platform_admin_workspace_features_route_allowedmodes",
+      "src_app_api_platform_admin_workspace_features_route_post",
+      "src_app_api_platform_admin_workspace_features_route_redirecttoworkspace",
+      "src_features_admin_actions",
+      "src_features_admin_actions_updatequoterequeststatus",
+      "src_features_admin_quote_request_status",
+      "src_features_admin_quote_request_status_isquoterequeststatus",
+      "src_features_admin_quote_request_status_persistquoterequeststatuschange",
+      "src_features_admin_quote_request_status_quote_request_statuses",
+      "src_features_admin_quote_request_status_quoterequeststatus",
+      "src_features_admin_quote_request_status_quoterequeststatussql",
+      "src_lib_db_server",
+      "src_lib_db_server_databaseurl",
+      "src_lib_db_server_hasdatabaseconfig",
+      "tests_admin_quote_status_audit_test"
+    ],
+    "180": [
       "src_app_branscher_slug_page",
       "src_app_branscher_slug_page_dynamicparams",
       "src_app_branscher_slug_page_generatemetadata",
@@ -6323,7 +6348,7 @@
       "tests_marketing_industry_seo_pages_test",
       "tests_marketing_industry_seo_pages_test_source"
     ],
-    "180": [
+    "181": [
       "src_app_cookies_page",
       "src_app_cookies_page_cookiespage",
       "src_app_cookies_page_metadata",
@@ -6341,7 +6366,7 @@
       "src_components_marketing_swedish_legal_page_swedishlegalpage",
       "src_components_marketing_swedish_legal_page_swedishlegalpageprops"
     ],
-    "181": [
+    "182": [
       "src_app_dashboard_installningar_booking_hours_actions",
       "src_app_dashboard_installningar_booking_hours_actions_bookinghourserror",
       "src_app_dashboard_installningar_booking_hours_actions_istime",
@@ -6359,7 +6384,7 @@
       "src_lib_workspace_booking_hours_db_totime",
       "src_lib_workspace_booking_hours_db_workspacebookinghour"
     ],
-    "182": [
+    "183": [
       "src_app_en_cookies_page",
       "src_app_en_cookies_page_englishcookiespage",
       "src_app_en_cookies_page_metadata",
@@ -6377,7 +6402,7 @@
       "src_components_marketing_english_legal_page_englishlegalpageprops",
       "src_components_marketing_english_legal_page_legalsection"
     ],
-    "183": [
+    "184": [
       "src_app_tjanster_slug_page",
       "src_app_tjanster_slug_page_dynamicparams",
       "src_app_tjanster_slug_page_generatemetadata",
@@ -6395,7 +6420,7 @@
       "tests_marketing_service_seo_pages_test",
       "tests_marketing_service_seo_pages_test_source"
     ],
-    "184": [
+    "185": [
       "src_features_email_marketplace_guest_invitation_email",
       "src_features_email_marketplace_guest_invitation_email_brevoresponse",
       "src_features_email_marketplace_guest_invitation_email_buildmarketplaceguestinvitationemail",
@@ -6413,7 +6438,7 @@
       "tests_preview_marketplace_email_config_test_originalenv",
       "tests_preview_marketplace_email_config_test_setcommonemailenv"
     ],
-    "185": [
+    "186": [
       "src_features_matching_directory_guest_single_readiness_test",
       "src_features_matching_directory_guest_single_readiness_test_candidaterow",
       "src_features_matching_directory_guest_single_readiness_test_docker",
@@ -6431,7 +6456,7 @@
       "tests_company_directory_pilot_guard_test",
       "tests_company_directory_pilot_guard_test_source"
     ],
-    "186": [
+    "187": [
       "src_lib_company_directory_geocoding_assertbeforedeadline",
       "src_lib_company_directory_geocoding_directory_provider_geocoding_max_batch",
       "src_lib_company_directory_geocoding_geocodedirectoryproviderpointsfromadmin",
@@ -6449,7 +6474,7 @@
       "tests_company_directory_provider_geocoding_contract_test_statusrow",
       "tests_company_directory_provider_geocoding_contract_test_workplace"
     ],
-    "187": [
+    "188": [
       "src_lib_marketplace_guest_opt_out_core",
       "src_lib_marketplace_guest_opt_out_core_isvalidmarketplaceguesttoken",
       "src_lib_marketplace_guest_opt_out_core_marketplacesql",
@@ -6467,7 +6492,7 @@
       "tests_marketplace_guest_opt_out_history_test_querytext",
       "tests_marketplace_guest_opt_out_history_test_sqlwithresponses"
     ],
-    "188": [
+    "189": [
       "src_lib_public_business_seo_isindexablepublicbusinessworkspace",
       "src_lib_public_business_seo_listpublicbusinesssitemapentries",
       "src_lib_public_read_cache",
@@ -6485,7 +6510,7 @@
       "tests_public_read_cache_contract_test_mocks",
       "tests_public_read_cache_contract_test_source"
     ],
-    "189": [
+    "190": [
       "scripts_supervisor_worker_handoff_applyunifieddiffsection",
       "scripts_supervisor_worker_handoff_assertsafescope",
       "scripts_supervisor_worker_handoff_buildpublicationartifact",
@@ -6502,7 +6527,7 @@
       "scripts_supervisor_worker_handoff_samepathset",
       "scripts_supervisor_worker_handoff_validatepublicationartifact"
     ],
-    "190": [
+    "191": [
       "src_app_api_cron_marketplace_auto_worker_route",
       "src_app_api_cron_marketplace_auto_worker_route_authorizedschedulerrequest",
       "src_app_api_cron_marketplace_auto_worker_route_bearermatches",
@@ -6519,7 +6544,7 @@
       "tests_marketplace_auto_worker_route_test_originalenv",
       "tests_marketplace_auto_worker_route_test_request"
     ],
-    "191": [
+    "192": [
       "src_app_dashboard_installningar_paminnelser_page",
       "src_app_dashboard_installningar_paminnelser_page_date",
       "src_app_dashboard_installningar_paminnelser_page_dynamic",
@@ -6536,7 +6561,7 @@
       "src_lib_booking_reminder_settings_requiremanager",
       "src_lib_booking_reminder_settings_updatebookingremindersettings"
     ],
-    "192": [
+    "193": [
       "src_lib_business_profile_location_policy",
       "src_lib_business_profile_location_policy_businessprofilelocationcandidate",
       "src_lib_business_profile_location_policy_businessprofilelocationpurpose",
@@ -6553,7 +6578,7 @@
       "tests_business_profile_location_policy_test",
       "tests_business_profile_location_policy_test_location"
     ],
-    "193": [
+    "194": [
       "src_lib_preview_marketplace_email_link",
       "src_lib_preview_marketplace_email_link_brevo_tracking_suffixes",
       "src_lib_preview_marketplace_email_link_controlledpreviewurl",
@@ -6570,7 +6595,7 @@
       "src_lib_preview_marketplace_email_link_resolvetrackingcandidate",
       "tests_preview_marketplace_email_link_test"
     ],
-    "194": [
+    "195": [
       "tests_supervisor_control_plane_v2_test",
       "tests_supervisor_control_plane_v2_test_expectcompatiblepermissions",
       "tests_supervisor_control_plane_v2_test_expectrouterpermissions",
@@ -6587,7 +6612,7 @@
       "tests_supervisor_control_plane_v2_test_workflowjob",
       "tests_supervisor_control_plane_v2_test_workflowrunstep"
     ],
-    "195": [
+    "196": [
       "e2e_tests_marketplace_preview_lifecycle_e2e",
       "e2e_tests_marketplace_preview_lifecycle_e2e_customeremail",
       "e2e_tests_marketplace_preview_lifecycle_e2e_customerphone",
@@ -6603,7 +6628,7 @@
       "e2e_tests_marketplace_preview_lifecycle_e2e_waitforemail",
       "e2e_tests_marketplace_preview_lifecycle_e2e_waitforstate"
     ],
-    "196": [
+    "197": [
       "scripts_supervisor_ci_autofix_candidate",
       "scripts_supervisor_ci_autofix_candidate_fail",
       "scripts_supervisor_ci_autofix_candidate_filebytes",
@@ -6619,7 +6644,7 @@
       "tests_supervisor_ci_autofix_candidate_test_run",
       "tests_supervisor_ci_autofix_candidate_test_workflow"
     ],
-    "197": [
+    "198": [
       "src_app_anslut_foretag_registrera_layout",
       "src_app_anslut_foretag_registrera_layout_metadata",
       "src_app_anslut_foretag_registrera_layout_registrationlayout",
@@ -6635,7 +6660,7 @@
       "tests_sitemap_index_hygiene_test",
       "tests_sitemap_index_hygiene_test_mocks"
     ],
-    "198": [
+    "199": [
       "src_app_api_auth_all_route",
       "src_app_api_auth_all_route_get",
       "src_app_api_auth_all_route_gethandlers",
@@ -6651,7 +6676,7 @@
       "tests_password_reset_rate_limit_test",
       "tests_password_reset_rate_limit_test_mocks"
     ],
-    "199": [
+    "200": [
       "src_app_boka_julius_salong_page",
       "src_app_boka_julius_salong_page_dynamic",
       "src_app_boka_julius_salong_page_juliusbookingpage",
@@ -6667,7 +6692,7 @@
       "src_app_boka_slug_page_unavailable",
       "src_app_boka_slug_page_withlang"
     ],
-    "200": [
+    "201": [
       "src_features_email_workspace_quote_offer_email",
       "src_features_email_workspace_quote_offer_email_brevoresponse",
       "src_features_email_workspace_quote_offer_email_buildworkspacequoteofferemail",
@@ -6683,7 +6708,7 @@
       "src_features_email_workspace_quote_offer_email_workspacequoteofferemaildeliveryresult",
       "src_features_email_workspace_quote_offer_email_workspacequoteofferemailinput"
     ],
-    "201": [
+    "202": [
       "src_lib_donis_generated_menu_sprite",
       "src_lib_donis_generated_menu_sprite_chunk_0",
       "src_lib_donis_generated_menu_sprite_chunk_1",
@@ -6699,7 +6724,7 @@
       "src_lib_donis_generated_menu_sprite_donis_generated_menu_sprite",
       "src_lib_donis_generated_menu_sprite_donis_generated_menu_tile_by_image_id"
     ],
-    "202": [
+    "203": [
       "tests_proffera_final_gate_wakeup_test",
       "tests_proffera_final_gate_wakeup_test_automergeaireviewshellblock",
       "tests_proffera_final_gate_wakeup_test_automergefixture",
@@ -6715,7 +6740,7 @@
       "tests_proffera_final_gate_wakeup_test_wakeupfixture",
       "tests_proffera_final_gate_wakeup_test_wakeupshellblock"
     ],
-    "203": [
+    "204": [
       "vercel",
       "vercel_crons",
       "vercel_deploymentenabled_main",
@@ -6731,7 +6756,7 @@
       "vercel_git_deploymentenabled",
       "vercel_schema"
     ],
-    "204": [
+    "205": [
       "e2e_package",
       "e2e_package_devdependencies",
       "e2e_package_devdependencies_playwright_test",
@@ -6746,7 +6771,7 @@
       "e2e_package_version",
       "playwright_test"
     ],
-    "205": [
+    "206": [
       "src_app_admin_foretag_page",
       "src_app_admin_foretag_page_dynamic",
       "src_app_admin_foretag_page_firstparam",
@@ -6761,7 +6786,7 @@
       "src_features_company_list_getworkspacecompanyrows",
       "src_features_company_list_workspacecompanyrow"
     ],
-    "206": [
+    "207": [
       "tests_marketplace_full_loop_postgres_test",
       "tests_marketplace_full_loop_postgres_test_applymigration",
       "tests_marketplace_full_loop_postgres_test_baseline",
@@ -6776,7 +6801,7 @@
       "tests_marketplace_full_loop_postgres_test_verifiedreviewprerequisites",
       "tests_marketplace_full_loop_postgres_test_waitforpostgres"
     ],
-    "207": [
+    "208": [
       "tests_marketplace_guest_wave_cap_test",
       "tests_marketplace_guest_wave_cap_test_createlegacyinvitationtable",
       "tests_marketplace_guest_wave_cap_test_createlegacysuppressiontable",
@@ -6791,7 +6816,7 @@
       "tests_marketplace_guest_wave_cap_test_transactionalinsert",
       "tests_marketplace_guest_wave_cap_test_waitforpostgres"
     ],
-    "208": [
+    "209": [
       "scripts_ci_scope_plan",
       "scripts_ci_scope_plan_classifyciscope",
       "scripts_ci_scope_plan_executionfor",
@@ -6804,20 +6829,6 @@
       "scripts_ci_scope_plan_isunittest",
       "scripts_ci_scope_plan_planresult",
       "scripts_ci_scope_plan_uniquesorted"
-    ],
-    "209": [
-      "src_features_admin_actions",
-      "src_features_admin_actions_updatequoterequeststatus",
-      "src_features_admin_quote_request_status",
-      "src_features_admin_quote_request_status_isquoterequeststatus",
-      "src_features_admin_quote_request_status_persistquoterequeststatuschange",
-      "src_features_admin_quote_request_status_quote_request_statuses",
-      "src_features_admin_quote_request_status_quoterequeststatus",
-      "src_features_admin_quote_request_status_quoterequeststatussql",
-      "src_lib_db_server",
-      "src_lib_db_server_databaseurl",
-      "src_lib_db_server_hasdatabaseconfig",
-      "tests_admin_quote_status_audit_test"
     ],
     "210": [
       "src_app_admin_status_page",
@@ -6976,18 +6987,6 @@
       "tests_supervisor_review_policy_contract_test_wakeuppolicy"
     ],
     "222": [
-      "src_app_admin_foretag_directory_oauth_diagnostic_page",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_diagnosticresult",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_dynamic",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_first",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_oauthdiagnosticpage",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_props",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_replaceorganizationnumber",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_rundiagnostic",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_saferesponsedetail",
-      "src_app_admin_foretag_directory_oauth_diagnostic_page_safetext"
-    ],
-    "223": [
       "src_app_branscher_page",
       "src_app_branscher_page_industriespage",
       "src_app_branscher_page_metadata",
@@ -6999,7 +6998,7 @@
       "src_components_marketing_marketing_industries_industry",
       "src_components_marketing_marketing_industries_marketingindustries"
     ],
-    "224": [
+    "223": [
       "src_app_dashboard_restaurang_restaurant_editor_priceinput",
       "src_lib_restaurant_price",
       "src_lib_restaurant_price_parserestaurantprice",
@@ -7011,7 +7010,7 @@
       "tests_restaurant_price_busy_test_source",
       "tests_restaurant_price_busy_test_visit"
     ],
-    "225": [
+    "224": [
       "src_app_demo_page",
       "src_app_demo_page_demopage",
       "src_app_demo_page_metadata",
@@ -7023,7 +7022,7 @@
       "src_components_marketing_marketing_demo_demostep",
       "src_components_marketing_marketing_demo_marketingdemo"
     ],
-    "226": [
+    "225": [
       "src_app_en_services_page",
       "src_app_en_services_page_englishservicespage",
       "src_app_en_services_page_metadata",
@@ -7035,7 +7034,7 @@
       "src_components_marketing_marketing_features_featuregroup",
       "src_components_marketing_marketing_features_marketingfeatures"
     ],
-    "227": [
+    "226": [
       "src_lib_company_directory_geocoding_diagnoseexactswerefaddressfromregisterunit",
       "src_lib_company_directory_geocoding_exactaddressfeatureid",
       "src_lib_company_directory_geocoding_isdirectoryaddressreference",
@@ -7047,7 +7046,7 @@
       "src_lib_company_directory_geocoding_registerunitreferences",
       "src_lib_company_directory_geocoding_resolveofficialaddress"
     ],
-    "228": [
+    "227": [
       "src_lib_company_directory_public_profile_extras",
       "src_lib_company_directory_public_profile_extras_compatibilityerror",
       "src_lib_company_directory_public_profile_extras_empty_extras",
@@ -7059,7 +7058,7 @@
       "src_lib_company_directory_public_profile_extras_publicdirectoryprofileservicearea",
       "src_lib_company_directory_public_profile_extras_text"
     ],
-    "229": [
+    "228": [
       "src_lib_company_directory_scb_provider_scbcompanyregistryenrichment",
       "tests_company_directory_scb_workplace_projection_contract_test",
       "tests_company_directory_scb_workplace_projection_contract_test_docker",
@@ -7071,7 +7070,7 @@
       "tests_company_directory_scb_workplace_projection_contract_test_waitforpostgres",
       "tests_company_directory_scb_workplace_projection_contract_test_workplace"
     ],
-    "230": [
+    "229": [
       "src_lib_workspace_marketplace_history",
       "src_lib_workspace_marketplace_history_compatibilityerror",
       "src_lib_workspace_marketplace_history_getworkspacemarketplacehistory",
@@ -7083,7 +7082,7 @@
       "tests_workspace_marketplace_claim_history_test_querytext",
       "tests_workspace_marketplace_claim_history_test_sqlresponses"
     ],
-    "231": [
+    "230": [
       "tests_business_profile_location_owner_postgres_integration_test",
       "tests_business_profile_location_owner_postgres_integration_test_createpostgressqladapter",
       "tests_business_profile_location_owner_postgres_integration_test_createquerybarrier",
@@ -7095,7 +7094,7 @@
       "tests_business_profile_location_owner_postgres_integration_test_taggedquery",
       "tests_business_profile_location_owner_postgres_integration_test_waitforpostgres"
     ],
-    "232": [
+    "231": [
       "tests_company_directory_admin_onboarding_contract_test",
       "tests_company_directory_admin_onboarding_contract_test_createsqlmock",
       "tests_company_directory_admin_onboarding_contract_test_expectredirect",
@@ -7107,7 +7106,7 @@
       "tests_company_directory_admin_onboarding_contract_test_source",
       "tests_company_directory_admin_onboarding_contract_test_verifiedcandidate"
     ],
-    "233": [
+    "232": [
       "tests_company_directory_full_revalidation_hard_block_scb_integration_test",
       "tests_company_directory_full_revalidation_hard_block_scb_integration_test_applymigration",
       "tests_company_directory_full_revalidation_hard_block_scb_integration_test_docker",
@@ -7119,7 +7118,7 @@
       "tests_company_directory_full_revalidation_hard_block_scb_integration_test_transport",
       "tests_company_directory_full_revalidation_hard_block_scb_integration_test_waitforpostgres"
     ],
-    "234": [
+    "233": [
       "tests_marketplace_guest_final_hardening_postgres_test",
       "tests_marketplace_guest_final_hardening_postgres_test_applymigration",
       "tests_marketplace_guest_final_hardening_postgres_test_baseline",
@@ -7131,7 +7130,7 @@
       "tests_marketplace_guest_final_hardening_postgres_test_migrationfiles",
       "tests_marketplace_guest_final_hardening_postgres_test_waitforpostgres"
     ],
-    "235": [
+    "234": [
       "tests_preview_safe_smoke_workflow_test",
       "tests_preview_safe_smoke_workflow_test_asrecord",
       "tests_preview_safe_smoke_workflow_test_jobs",
@@ -7143,7 +7142,7 @@
       "tests_preview_safe_smoke_workflow_test_workflow",
       "tests_preview_safe_smoke_workflow_test_yamlrecord"
     ],
-    "236": [
+    "235": [
       "src_app_api_marketplace_service_job_token_route",
       "src_app_api_marketplace_service_job_token_route_dynamic",
       "src_app_api_marketplace_service_job_token_route_nextstatus",
@@ -7154,7 +7153,7 @@
       "src_app_api_marketplace_service_job_token_route_sameorigin",
       "src_lib_marketplace_service_jobs_marketplaceservicejobstatus"
     ],
-    "237": [
+    "236": [
       "src_features_quote_request_directory_prefill",
       "src_features_quote_request_directory_prefill_categorymap",
       "src_features_quote_request_directory_prefill_directoryquoteinput",
@@ -7165,7 +7164,7 @@
       "tests_quote_request_directory_prefill_test",
       "tests_quote_request_directory_prefill_test_directorycases"
     ],
-    "238": [
+    "237": [
       "src_lib_company_directory_provider_activation_providersoletraderprofilecanreleasemarketplace",
       "tests_company_directory_sole_trader_marketplace_release_test",
       "tests_company_directory_sole_trader_marketplace_release_test_blockedsoletraderprofile",
@@ -7176,7 +7175,7 @@
       "tests_company_directory_sole_trader_marketplace_release_test_pendingmanualreview",
       "tests_company_directory_sole_trader_marketplace_release_test_querytext"
     ],
-    "239": [
+    "238": [
       "src_lib_marketplace_auto_worker_default_marketplace_wave2_delay_ms",
       "src_lib_marketplace_auto_worker_marketplace_auto_worker_actor",
       "tests_marketplace_auto_worker_test",
@@ -7187,7 +7186,7 @@
       "tests_marketplace_auto_worker_test_queuerow",
       "tests_marketplace_auto_worker_test_summary"
     ],
-    "240": [
+    "239": [
       "tests_company_directory_category_policy_revalidation_test",
       "tests_company_directory_category_policy_revalidation_test_candidate",
       "tests_company_directory_category_policy_revalidation_test_candidatestatus",
@@ -7198,7 +7197,7 @@
       "tests_company_directory_category_policy_revalidation_test_sqlcalls",
       "tests_company_directory_category_policy_revalidation_test_sqlresponder"
     ],
-    "241": [
+    "240": [
       "tests_company_directory_full_revalidation_batch_cap_test",
       "tests_company_directory_full_revalidation_batch_cap_test_candidate",
       "tests_company_directory_full_revalidation_batch_cap_test_evaluation",
@@ -7209,7 +7208,7 @@
       "tests_company_directory_public_search_workplace_integration_test_prepareclaimeddisclosure",
       "tests_marketplace_full_loop_postgres_test_insertauthorityraceinvitation"
     ],
-    "242": [
+    "241": [
       "tests_company_directory_marketplace_claim_conversion_test",
       "tests_company_directory_marketplace_claim_conversion_test_baseclaimrow",
       "tests_company_directory_marketplace_claim_conversion_test_mocks",
@@ -7220,7 +7219,7 @@
       "tests_company_directory_marketplace_claim_conversion_test_sqlscenario",
       "tests_company_directory_marketplace_claim_conversion_test_verifiedevidence"
     ],
-    "243": [
+    "242": [
       "tests_company_directory_marketplace_smoke_followup_test",
       "tests_company_directory_marketplace_smoke_followup_test_access",
       "tests_company_directory_marketplace_smoke_followup_test_linkedprofilesql",
@@ -7231,7 +7230,7 @@
       "tests_company_directory_marketplace_smoke_followup_test_renderedtext",
       "tests_company_directory_marketplace_smoke_followup_test_walkreacttree"
     ],
-    "244": [
+    "243": [
       "tests_company_directory_sole_trader_upstream_retry_test",
       "tests_company_directory_sole_trader_upstream_retry_test_activerecord",
       "tests_company_directory_sole_trader_upstream_retry_test_createsqlmock",
@@ -7242,7 +7241,7 @@
       "tests_company_directory_sole_trader_upstream_retry_test_producererror",
       "tests_company_directory_sole_trader_upstream_retry_test_response"
     ],
-    "245": [
+    "244": [
       "tests_marketplace_advertising_dispatch_contract_test",
       "tests_marketplace_advertising_dispatch_contract_test_createsql",
       "tests_marketplace_advertising_dispatch_contract_test_eligiblerow",
@@ -7253,7 +7252,7 @@
       "tests_marketplace_advertising_dispatch_contract_test_mocks",
       "tests_marketplace_advertising_dispatch_contract_test_querytext"
     ],
-    "246": [
+    "245": [
       "tests_quote_request_language_switch_guard_test",
       "tests_quote_request_language_switch_guard_test_aselement",
       "tests_quote_request_language_switch_guard_test_elementlike",
@@ -7264,7 +7263,7 @@
       "tests_quote_request_language_switch_guard_test_resethooks",
       "tests_quote_request_language_switch_guard_test_runtime"
     ],
-    "247": [
+    "246": [
       "e2e_playwright_config",
       "e2e_playwright_config_configdir",
       "e2e_playwright_config_islocal",
@@ -7274,17 +7273,7 @@
       "e2e_playwright_config_productionhosts",
       "e2e_playwright_config_repositoryroot"
     ],
-    "248": [
-      "src_app_admin_workspaces_workspaceid_page",
-      "src_app_admin_workspaces_workspaceid_page_adminworkspaceoverviewpage",
-      "src_app_admin_workspaces_workspaceid_page_featureactionform",
-      "src_app_admin_workspaces_workspaceid_page_featuremessages",
-      "src_app_admin_workspaces_workspaceid_page_statcard",
-      "src_lib_admin_workspace_overview",
-      "src_lib_admin_workspace_overview_getadminworkspaceoverview",
-      "src_lib_admin_workspace_overview_isuuid"
-    ],
-    "249": [
+    "247": [
       "src_app_api_integrations_chat_lead_route",
       "src_app_api_integrations_chat_lead_route_chatleadpayload",
       "src_app_api_integrations_chat_lead_route_hasvalidsecret",
@@ -7294,7 +7283,7 @@
       "src_app_api_integrations_chat_lead_route_runtime",
       "src_app_api_integrations_chat_lead_route_text"
     ],
-    "250": [
+    "248": [
       "src_components_dashboard_dashboard_owner_onboarding_banner",
       "src_components_dashboard_dashboard_owner_onboarding_banner_dashboardowneronboardingbanner",
       "src_lib_owner_onboarding_routing",
@@ -7304,7 +7293,7 @@
       "src_lib_owner_onboarding_routing_test",
       "src_lib_workspace_experience_getworkspaceonboarding"
     ],
-    "251": [
+    "249": [
       "tests_company_directory_full_revalidation_org_not_found_backoff_integration_test",
       "tests_company_directory_full_revalidation_org_not_found_backoff_integration_test_docker",
       "tests_company_directory_full_revalidation_org_not_found_backoff_integration_test_mocks",
@@ -7314,7 +7303,7 @@
       "tests_company_directory_full_revalidation_org_not_found_backoff_integration_test_transport",
       "tests_company_directory_full_revalidation_org_not_found_backoff_integration_test_waitforpostgres"
     ],
-    "252": [
+    "250": [
       "tests_marketplace_guest_opt_out_history_postgres_test",
       "tests_marketplace_guest_opt_out_history_postgres_test_applymigration",
       "tests_marketplace_guest_opt_out_history_postgres_test_baseline",
@@ -7324,7 +7313,7 @@
       "tests_marketplace_guest_opt_out_history_postgres_test_migrationfiles",
       "tests_marketplace_guest_opt_out_history_postgres_test_waitforpostgres"
     ],
-    "253": [
+    "251": [
       "tests_v1_launch_evidence_contract_test",
       "tests_v1_launch_evidence_contract_test_contract",
       "tests_v1_launch_evidence_contract_test_contractpath",
@@ -7334,7 +7323,7 @@
       "tests_v1_launch_evidence_contract_test_v1contract",
       "tests_v1_launch_evidence_contract_test_v1criterion"
     ],
-    "254": [
+    "252": [
       "package_scripts",
       "package_scripts_build",
       "package_scripts_dev",
@@ -7343,7 +7332,7 @@
       "package_scripts_test",
       "package_scripts_typecheck"
     ],
-    "255": [
+    "253": [
       "src_app_api_cron_company_directory_revalidation_route",
       "src_app_api_cron_company_directory_revalidation_route_dynamic",
       "src_app_api_cron_company_directory_revalidation_route_failedpolicyevaluation",
@@ -7352,7 +7341,7 @@
       "src_app_api_cron_company_directory_revalidation_route_invalidatepublicdirectorycachesbesteffort",
       "src_app_api_cron_company_directory_revalidation_route_maxduration"
     ],
-    "256": [
+    "254": [
       "src_app_dashboard_marknadsplats_claim_paid_cta",
       "src_app_dashboard_marknadsplats_claim_paid_cta_marketplaceclaimpaidcta",
       "src_lib_marketplace_claim_paid_cta",
@@ -7361,7 +7350,7 @@
       "src_lib_marketplace_claim_paid_cta_normalizemarketplaceclaimpaidctalocale",
       "tests_marketplace_claim_paid_cta_test"
     ],
-    "257": [
+    "255": [
       "src_app_dashboard_offerter_id_actions_sendworkspacequoteofferstate",
       "src_app_dashboard_offerter_id_send_offer_form",
       "src_app_dashboard_offerter_id_send_offer_form_deliverynotice",
@@ -7370,7 +7359,7 @@
       "src_app_dashboard_offerter_id_send_offer_form_sendoffercopy",
       "src_app_dashboard_offerter_id_send_offer_form_sendofferform"
     ],
-    "258": [
+    "256": [
       "src_app_dashboard_omdomen_inbjudningar_review_invitation_manager",
       "src_app_dashboard_omdomen_inbjudningar_review_invitation_manager_createdinvitation",
       "src_app_dashboard_omdomen_inbjudningar_review_invitation_manager_deliverymode",
@@ -7379,7 +7368,16 @@
       "src_app_dashboard_omdomen_inbjudningar_review_invitation_manager_reviewinvitationmanagerprops",
       "src_features_reviews_verified_review_reviewinvitationcandidate"
     ],
-    "259": [
+    "257": [
+      "src_lib_service_job_attachment_policy",
+      "src_lib_service_job_attachment_policy_sanitizeservicejobattachmentname",
+      "src_lib_service_job_attachment_policy_servicejobattachmentmaxbytes",
+      "src_lib_service_job_attachment_policy_servicejobattachmenttypes",
+      "src_lib_service_job_attachment_policy_servicejobattachmentvalidation",
+      "src_lib_service_job_attachment_policy_test",
+      "src_lib_service_job_attachment_policy_validateservicejobattachment"
+    ],
+    "258": [
       "src_lib_verified_review_persistence",
       "src_lib_verified_review_persistence_persistreviewinvitation",
       "src_lib_verified_review_persistence_persistverifiedreviewsubmission",
@@ -7388,7 +7386,7 @@
       "tests_verified_review_flow_test_source",
       "tests_verified_review_flow_test_sqlmock"
     ],
-    "260": [
+    "259": [
       "tests_business_profile_service_base_verification_test",
       "tests_business_profile_service_base_verification_test_createsqlmock",
       "tests_business_profile_service_base_verification_test_mocks",
@@ -7397,7 +7395,7 @@
       "tests_business_profile_service_base_verification_test_querytext",
       "tests_business_profile_service_base_verification_test_servicebaseinput"
     ],
-    "261": [
+    "260": [
       "tests_company_directory_full_revalidation_org_not_found_backoff_test",
       "tests_company_directory_full_revalidation_org_not_found_backoff_test_mocks",
       "tests_company_directory_full_revalidation_org_not_found_backoff_test_normalizequery",
@@ -7406,7 +7404,7 @@
       "tests_company_directory_full_revalidation_org_not_found_backoff_test_sqlresponder",
       "tests_company_directory_full_revalidation_org_not_found_backoff_test_transport"
     ],
-    "262": [
+    "261": [
       "tests_company_directory_official_facts_repair_cooldown_integration_test",
       "tests_company_directory_official_facts_repair_cooldown_integration_test_directory_migrations",
       "tests_company_directory_official_facts_repair_cooldown_integration_test_docker",
@@ -7415,7 +7413,7 @@
       "tests_company_directory_official_facts_repair_cooldown_integration_test_seedprofile",
       "tests_company_directory_official_facts_repair_cooldown_integration_test_waitforpostgres"
     ],
-    "263": [
+    "262": [
       "tests_company_directory_provider_activation_area_race_integration_test",
       "tests_company_directory_provider_activation_area_race_integration_test_docker",
       "tests_company_directory_provider_activation_area_race_integration_test_expectjuridicalauthoritywithdrawalfailsclosed",
@@ -7424,7 +7422,7 @@
       "tests_company_directory_provider_activation_area_race_integration_test_waitforactivationtoblock",
       "tests_company_directory_provider_activation_area_race_integration_test_waitforpostgres"
     ],
-    "264": [
+    "263": [
       "tests_company_directory_public_cache_mutation_contract_test",
       "tests_company_directory_public_cache_mutation_contract_test_adminclaimsql",
       "tests_company_directory_public_cache_mutation_contract_test_cronrequest",
@@ -7433,7 +7431,7 @@
       "tests_company_directory_public_cache_mutation_contract_test_publicationsql",
       "tests_company_directory_public_cache_mutation_contract_test_publishedrevalidationsql"
     ],
-    "265": [
+    "264": [
       "tests_company_directory_public_data_location_test",
       "tests_company_directory_public_data_location_test_claimedrow",
       "tests_company_directory_public_data_location_test_claimedsql",
@@ -7442,7 +7440,7 @@
       "tests_company_directory_public_data_location_test_scbworkplace",
       "tests_company_directory_public_data_location_test_sqlforpublished"
     ],
-    "266": [
+    "265": [
       "tests_company_directory_revalidation_reliability_test",
       "tests_company_directory_revalidation_reliability_test_env_keys",
       "tests_company_directory_revalidation_reliability_test_httpsmock",
@@ -7451,7 +7449,7 @@
       "tests_company_directory_revalidation_reliability_test_outcome",
       "tests_company_directory_revalidation_reliability_test_previousenv"
     ],
-    "267": [
+    "266": [
       "tests_preview_marketplace_browser_workflow_contract_test",
       "tests_preview_marketplace_browser_workflow_contract_test_permissionsfrom",
       "tests_preview_marketplace_browser_workflow_contract_test_playwrightconfig",
@@ -7460,7 +7458,7 @@
       "tests_preview_marketplace_browser_workflow_contract_test_toplevelpermissions",
       "tests_preview_marketplace_browser_workflow_contract_test_workflow"
     ],
-    "268": [
+    "267": [
       "tests_preview_marketplace_fixture_route_test",
       "tests_preview_marketplace_fixture_route_test_databasekeys",
       "tests_preview_marketplace_fixture_route_test_mocks",
@@ -7469,7 +7467,7 @@
       "tests_preview_marketplace_fixture_route_test_restoredatabaseenv",
       "tests_preview_marketplace_fixture_route_test_suiterunid"
     ],
-    "269": [
+    "268": [
       "tests_supervisor_worker_handoff_large_state_test",
       "tests_supervisor_worker_handoff_large_state_test_dispatchevidence",
       "tests_supervisor_worker_handoff_large_state_test_occurrences",
@@ -7478,7 +7476,7 @@
       "tests_supervisor_worker_handoff_large_state_test_workflowsource",
       "tests_supervisor_worker_handoff_large_state_test_workflowstepscript"
     ],
-    "270": [
+    "269": [
       "e2e_tests_primeview_booking_address_e2e",
       "e2e_tests_primeview_booking_address_e2e_completenativerequirements",
       "e2e_tests_primeview_booking_address_e2e_exerciseaddressvalidation",
@@ -7486,7 +7484,7 @@
       "e2e_tests_primeview_booking_address_e2e_openbooking",
       "e2e_tests_primeview_booking_address_e2e_requestnativesubmit"
     ],
-    "271": [
+    "270": [
       "next_config",
       "next_config_nextconfig",
       "src_lib_security_response_headers",
@@ -7494,7 +7492,7 @@
       "tests_security_response_headers_test",
       "tests_security_response_headers_test_headermap"
     ],
-    "272": [
+    "271": [
       "package",
       "package_engines",
       "package_engines_node",
@@ -7502,7 +7500,7 @@
       "package_private",
       "package_version"
     ],
-    "273": [
+    "272": [
       "src_app_en_companies_page",
       "src_app_en_companies_page_basemetadata",
       "src_app_en_companies_page_dynamic",
@@ -7510,7 +7508,7 @@
       "src_app_en_companies_page_metadata",
       "src_app_en_companies_page_pageprops"
     ],
-    "274": [
+    "273": [
       "src_app_fa_offert_page",
       "src_app_fa_offert_page_metadata",
       "src_app_fa_offert_page_queryvalue",
@@ -7518,7 +7516,7 @@
       "src_app_fa_offert_page_quotepageprops",
       "src_features_quote_request_quote_request_form_quoterequestform"
     ],
-    "275": [
+    "274": [
       "src_app_preview_admin_setup_page",
       "src_app_preview_admin_setup_page_dynamic",
       "src_app_preview_admin_setup_page_metadata",
@@ -7526,7 +7524,7 @@
       "src_app_preview_admin_setup_previewadminsetupform",
       "src_app_preview_admin_setup_previewadminsetupform_previewadminsetupform"
     ],
-    "276": [
+    "275": [
       "src_components_marketing_marketing_home",
       "src_components_marketing_marketing_home_copy",
       "src_components_marketing_marketing_home_groupicons",
@@ -7534,7 +7532,7 @@
       "src_components_marketing_marketing_home_lifecycleicons",
       "src_components_marketing_marketing_home_marketinghome"
     ],
-    "277": [
+    "276": [
       "src_features_email_customer_booking_portal_email",
       "src_features_email_customer_booking_portal_email_brevoresponse",
       "src_features_email_customer_booking_portal_email_escapehtml",
@@ -7542,7 +7540,7 @@
       "src_features_email_customer_booking_portal_email_sendcustomerbookingportalemail",
       "src_features_email_customer_booking_portal_email_sendcustomerbookingportalemailinput"
     ],
-    "278": [
+    "277": [
       "tests_company_directory_public_ux_2_test",
       "tests_company_directory_public_ux_2_test_profile",
       "tests_company_directory_public_ux_2_test_results",
@@ -7550,7 +7548,7 @@
       "tests_company_directory_public_ux_2_test_searchpage",
       "tests_company_directory_public_ux_2_test_source"
     ],
-    "279": [
+    "278": [
       "tests_company_directory_sole_trader_partial_source_errors_test",
       "tests_company_directory_sole_trader_partial_source_errors_test_activerecord",
       "tests_company_directory_sole_trader_partial_source_errors_test_createsqlmock",
@@ -7558,7 +7556,7 @@
       "tests_company_directory_sole_trader_partial_source_errors_test_mocks",
       "tests_company_directory_sole_trader_partial_source_errors_test_sourceerror"
     ],
-    "280": [
+    "279": [
       "tests_company_directory_sole_trader_production_request_contract_test",
       "tests_company_directory_sole_trader_production_request_contract_test_createsqlmock",
       "tests_company_directory_sole_trader_production_request_contract_test_env_keys",
@@ -7566,7 +7564,7 @@
       "tests_company_directory_sole_trader_production_request_contract_test_officialrecord",
       "tests_company_directory_sole_trader_production_request_contract_test_originalenv"
     ],
-    "281": [
+    "280": [
       "tests_dashboard_leads_rls_postgres_integration_test",
       "tests_dashboard_leads_rls_postgres_integration_test_applymigration",
       "tests_dashboard_leads_rls_postgres_integration_test_docker",
@@ -7574,7 +7572,7 @@
       "tests_dashboard_leads_rls_postgres_integration_test_runastenant",
       "tests_dashboard_leads_rls_postgres_integration_test_waitforpostgres"
     ],
-    "282": [
+    "281": [
       "tests_marketplace_guest_final_review_regressions_test",
       "tests_marketplace_guest_final_review_regressions_test_baseline",
       "tests_marketplace_guest_final_review_regressions_test_migration",
@@ -7582,7 +7580,7 @@
       "tests_marketplace_guest_final_review_regressions_test_runtimeeligibility",
       "tests_marketplace_guest_final_review_regressions_test_statusvalidation"
     ],
-    "283": [
+    "282": [
       "tests_workspace_service_directory_identity_test",
       "tests_workspace_service_directory_identity_test_migration",
       "tests_workspace_service_directory_identity_test_provideractivation",
@@ -7590,758 +7588,758 @@
       "tests_workspace_service_directory_identity_test_servicesdb",
       "tests_workspace_service_directory_identity_test_source"
     ],
-    "284": [
+    "283": [
       "e2e_tests_preview_marketplace_lifecycle_e2e",
       "e2e_tests_preview_marketplace_lifecycle_e2e_lifecycle",
       "e2e_tests_preview_marketplace_lifecycle_e2e_lifecycleready",
       "e2e_tests_preview_marketplace_lifecycle_e2e_rematch",
       "e2e_tests_preview_marketplace_lifecycle_e2e_rematchready"
     ],
-    "285": [
+    "284": [
       "e2e_tests_public_critical_flows_e2e",
       "e2e_tests_public_critical_flows_e2e_advancequotetolocation",
       "e2e_tests_public_critical_flows_e2e_expectsmartdetails",
       "e2e_tests_public_critical_flows_e2e_fillrequiredsmartdetails",
       "e2e_tests_public_critical_flows_e2e_getcurrentposition"
     ],
-    "286": [
+    "285": [
       "scripts_p22k_run_production_migration_template",
       "scripts_p22k_run_production_migration_template_exittemplateonly",
       "scripts_p22k_run_production_migration_template_migration_files",
       "scripts_p22k_run_production_migration_template_printtemplatesummary",
       "scripts_p22k_run_production_migration_template_rationale_7"
     ],
-    "287": [
+    "286": [
       "src_app_demo_primeview_gallery_navigation",
       "src_app_demo_primeview_gallery_navigation_navigationtarget",
       "src_app_demo_primeview_gallery_navigation_primeviewgallerynavigation",
       "src_app_demo_primeview_layout",
       "src_app_demo_primeview_layout_primeviewlayout"
     ],
-    "288": [
+    "287": [
       "src_app_en_get_quote_page",
       "src_app_en_get_quote_page_englishquotepage",
       "src_app_en_get_quote_page_metadata",
       "src_app_en_get_quote_page_queryvalue",
       "src_app_en_get_quote_page_quotepageprops"
     ],
-    "289": [
+    "288": [
       "src_features_admin_session",
       "src_features_admin_session_admin_cookie_max_age",
       "src_features_admin_session_admin_cookie_name",
       "src_features_admin_session_hasadminsession",
       "src_features_admin_session_isvalidadmincode"
     ],
-    "290": [
+    "289": [
       "src_lib_workspace_feature_catalog",
       "src_lib_workspace_feature_catalog_isworkspacefeaturekey",
       "src_lib_workspace_feature_catalog_workspacefeaturecatalog",
       "src_lib_workspace_feature_catalog_workspacefeaturekey",
       "src_lib_workspace_feature_catalog_workspacefeaturekeys"
     ],
-    "291": [
+    "290": [
       "tests_company_directory_projection_repairs_contract_test",
       "tests_company_directory_projection_repairs_contract_test_baseline_migration_paths",
       "tests_company_directory_projection_repairs_contract_test_docker",
       "tests_company_directory_projection_repairs_contract_test_resetschemafromcommittedmigrations",
       "tests_company_directory_projection_repairs_contract_test_waitforpostgres"
     ],
-    "292": [
+    "291": [
       "tests_production_health_dispatch_control_test",
       "tests_production_health_dispatch_control_test_fakehealthmode",
       "tests_production_health_dispatch_control_test_runautomergepostmergefixture",
       "tests_production_health_dispatch_control_test_runbasehealth",
       "tests_production_health_dispatch_control_test_source"
     ],
-    "293": [
+    "292": [
       "tests_release_rollback_plan_test",
       "tests_release_rollback_plan_test_currentsha",
       "tests_release_rollback_plan_test_run",
       "tests_release_rollback_plan_test_script",
       "tests_release_rollback_plan_test_targetsha"
     ],
-    "294": [
+    "293": [
       "e2e_run_marketplace_preview_lifecycle",
       "e2e_run_marketplace_preview_lifecycle_max_playwright_attempts",
       "e2e_run_marketplace_preview_lifecycle_oidc_audience",
       "e2e_run_marketplace_preview_lifecycle_sh__entry"
     ],
-    "295": [
+    "294": [
       "e2e_tests_preview_critical_flows_e2e",
       "e2e_tests_preview_critical_flows_e2e_authconfig",
       "e2e_tests_preview_critical_flows_e2e_authready",
       "e2e_tests_preview_critical_flows_e2e_signin"
     ],
-    "296": [
+    "295": [
       "scripts_release_rollback_plan",
       "scripts_release_rollback_plan_database_change_values",
       "scripts_release_rollback_plan_main",
       "scripts_release_rollback_plan_validaterollbackplan"
     ],
-    "297": [
+    "296": [
       "src_app_anslut_foretag_page",
       "src_app_anslut_foretag_page_benefits",
       "src_app_anslut_foretag_page_joincompanypage",
       "src_app_anslut_foretag_page_metadata"
     ],
-    "298": [
+    "297": [
       "src_app_anslut_foretag_tack_page",
       "src_app_anslut_foretag_tack_page_metadata",
       "src_app_anslut_foretag_tack_page_pageprops",
       "src_app_anslut_foretag_tack_page_thankspage"
     ],
-    "299": [
+    "298": [
       "src_app_api_primeview_reviews_route",
       "src_app_api_primeview_reviews_route_dynamic",
       "src_app_api_primeview_reviews_route_post",
       "src_app_api_primeview_reviews_route_runtime"
     ],
-    "300": [
+    "299": [
       "src_app_demo_donis_trattoria_layout",
       "src_app_demo_donis_trattoria_layout_donistrattoriademolayout",
       "src_app_demo_donis_trattoria_reference_motion",
       "src_app_demo_donis_trattoria_reference_motion_referencemotion"
     ],
-    "301": [
+    "300": [
       "src_app_en_join_business_register_page",
       "src_app_en_join_business_register_page_englishregistrationpage",
       "src_app_en_join_business_register_page_metadata",
       "src_app_en_join_business_register_page_pageprops"
     ],
-    "302": [
+    "301": [
       "src_app_en_portfolio_page",
       "src_app_en_portfolio_page_englishportfoliopage",
       "src_app_en_portfolio_page_metadata",
       "src_app_en_portfolio_page_projects"
     ],
-    "303": [
+    "302": [
       "src_app_en_portfolio_primeview_page",
       "src_app_en_portfolio_primeview_page_delivered",
       "src_app_en_portfolio_primeview_page_englishprimeviewportfoliopage",
       "src_app_en_portfolio_primeview_page_metadata"
     ],
-    "304": [
+    "303": [
       "src_app_hur_det_fungerar_page",
       "src_app_hur_det_fungerar_page_howitworkspage",
       "src_app_hur_det_fungerar_page_metadata",
       "src_app_hur_det_fungerar_page_steps"
     ],
-    "305": [
+    "304": [
       "src_app_kontakt_page",
       "src_app_kontakt_page_contactpage",
       "src_app_kontakt_page_details",
       "src_app_kontakt_page_metadata"
     ],
-    "306": [
+    "305": [
       "src_app_portfolio_page",
       "src_app_portfolio_page_metadata",
       "src_app_portfolio_page_portfoliopage",
       "src_app_portfolio_page_projects"
     ],
-    "307": [
+    "306": [
       "src_app_portfolio_primeview_page",
       "src_app_portfolio_primeview_page_delivered",
       "src_app_portfolio_primeview_page_metadata",
       "src_app_portfolio_primeview_page_primeviewportfoliopage"
     ],
-    "308": [
+    "307": [
       "tests_ci_scope_plan_test",
       "tests_ci_scope_plan_test_ciscopeplan",
       "tests_ci_scope_plan_test_expectfullexecution",
       "tests_ci_scope_plan_test_plan"
     ],
-    "309": [
+    "308": [
       "tests_marketplace_customer_comparison_migration_test",
       "tests_marketplace_customer_comparison_migration_test_accessmigration",
       "tests_marketplace_customer_comparison_migration_test_accesstabletokencolumns",
       "tests_marketplace_customer_comparison_migration_test_winnerindexmigration"
     ],
-    "310": [
+    "309": [
       "tests_workspace_tenant_join_boundary_test",
       "tests_workspace_tenant_join_boundary_test_count",
       "tests_workspace_tenant_join_boundary_test_dashboardbookingreaders",
       "tests_workspace_tenant_join_boundary_test_source"
     ],
-    "311": [
+    "310": [
       "src_app_anslut_foretag_registrera_page",
       "src_app_anslut_foretag_registrera_page_page",
       "src_app_anslut_foretag_registrera_page_pageprops"
     ],
-    "312": [
+    "311": [
       "src_app_boka_julius_salong_layout",
       "src_app_boka_julius_salong_layout_juliusbookinglayout",
       "src_app_boka_julius_salong_layout_metadata"
     ],
-    "313": [
+    "312": [
       "src_app_dashboard_kalender_layout",
       "src_app_dashboard_kalender_layout_calendarlayout",
       "src_app_dashboard_kalender_layout_metadata"
     ],
-    "314": [
+    "313": [
       "src_app_en_layout",
       "src_app_en_layout_englishlayout",
       "src_app_en_layout_metadata"
     ],
-    "315": [
+    "314": [
       "src_app_og_route",
       "src_app_og_route_get",
       "src_app_og_route_runtime"
     ],
-    "316": [
+    "315": [
       "src_types_roles",
       "src_types_roles_userrole",
       "src_types_roles_userroles"
     ],
-    "317": [
+    "316": [
       "tests_business_profile_location_migration_integration_test",
       "tests_business_profile_location_migration_integration_test_docker",
       "tests_business_profile_location_migration_integration_test_waitforpostgres"
     ],
-    "318": [
+    "317": [
       "tests_company_directory_discovery_source_resolution_test",
       "tests_company_directory_discovery_source_resolution_test_resolvebulkurl",
       "tests_company_directory_discovery_source_resolution_test_workerpath"
     ],
-    "319": [
+    "318": [
       "tests_company_directory_quality_truth_migration_test",
       "tests_company_directory_quality_truth_migration_test_docker",
       "tests_company_directory_quality_truth_migration_test_waitforpostgres"
     ],
-    "320": [
+    "319": [
       "tests_dashboard_workflows_human_ux_contract_test",
       "tests_dashboard_workflows_human_ux_contract_test_between",
       "tests_dashboard_workflows_human_ux_contract_test_source"
     ],
-    "321": [
+    "320": [
       "tests_database_env_guard_test",
       "tests_database_env_guard_test_root",
       "tests_database_env_guard_test_sourcefiles"
     ],
-    "322": [
+    "321": [
       "tests_high_risk_review_outage_fallback_test",
       "tests_high_risk_review_outage_fallback_test_automerge",
       "tests_high_risk_review_outage_fallback_test_workflow"
     ],
-    "323": [
+    "322": [
       "tests_pg_client_process_id_d",
       "tests_pg_client_process_id_d_client",
       "tests_pg_client_process_id_d_pg"
     ],
-    "324": [
+    "323": [
       "tests_preview_marketplace_browser_e2e_scope_test",
       "tests_preview_marketplace_browser_e2e_scope_test_fixturesource",
       "tests_preview_marketplace_browser_e2e_scope_test_source"
     ],
-    "325": [
+    "324": [
       "tests_preview_marketplace_oidc_retry_test",
       "tests_preview_marketplace_oidc_retry_test_executable",
       "tests_preview_marketplace_oidc_retry_test_scriptpath"
     ],
-    "326": [
+    "325": [
       "e2e_tests_mobile_pwa_auth_language_e2e",
       "e2e_tests_mobile_pwa_auth_language_e2e_queryvalue"
     ],
-    "327": [
+    "326": [
       "e2e_tests_public_nearby_geolocation_e2e",
       "e2e_tests_public_nearby_geolocation_e2e_getcurrentposition"
     ],
-    "328": [
+    "327": [
       "eslint_config",
       "eslint_config_eslintconfig"
     ],
-    "329": [
+    "328": [
       "lucide_react",
       "package_dependencies_lucide_react"
     ],
-    "330": [
+    "329": [
       "package_dependencies_pg",
       "pg"
     ],
-    "331": [
+    "330": [
       "package_dependencies_qrcode",
       "qrcode"
     ],
-    "332": [
+    "331": [
       "package_dependencies_react_dom",
       "react_dom"
     ],
-    "333": [
+    "332": [
       "package_dependencies_stripe",
       "stripe"
     ],
-    "334": [
+    "333": [
       "package_devdependencies_typescript",
       "typescript"
     ],
-    "335": [
+    "334": [
       "postcss_config",
       "postcss_config_config"
     ],
-    "336": [
+    "335": [
       "scripts_production_base_health",
       "scripts_production_base_health_sh__entry"
     ],
-    "337": [
+    "336": [
       "scripts_validate_sonarqube_config",
       "scripts_validate_sonarqube_config_fail"
     ],
-    "338": [
+    "337": [
       "src_app_admin_foretag_hantera_page",
       "src_app_admin_foretag_hantera_page_page"
     ],
-    "339": [
+    "338": [
       "src_app_admin_marketplace_layout",
       "src_app_admin_marketplace_layout_marketplaceadminlayout"
     ],
-    "340": [
+    "339": [
       "src_app_boka_julius_salong_manifest_webmanifest_route",
       "src_app_boka_julius_salong_manifest_webmanifest_route_get"
     ],
-    "341": [
+    "340": [
       "src_app_dashboard_ai_assistent_layout",
       "src_app_dashboard_ai_assistent_layout_aiassistantlayout"
     ],
-    "342": [
+    "341": [
       "src_app_dashboard_analys_layout",
       "src_app_dashboard_analys_layout_analyticslayout"
     ],
-    "343": [
+    "342": [
       "src_app_dashboard_installningar_foretagssida_layout",
       "src_app_dashboard_installningar_foretagssida_layout_businesswebsitelayout"
     ],
-    "344": [
+    "343": [
       "src_app_dashboard_installningar_funktioner_layout",
       "src_app_dashboard_installningar_funktioner_layout_featuresettingslayout"
     ],
-    "345": [
+    "344": [
       "src_app_dashboard_installningar_paminnelser_layout",
       "src_app_dashboard_installningar_paminnelser_layout_remindersettingslayout"
     ],
-    "346": [
+    "345": [
       "src_app_dashboard_installningar_utseende_layout",
       "src_app_dashboard_installningar_utseende_layout_appearancelayout"
     ],
-    "347": [
+    "346": [
       "src_app_dashboard_kalender_manifest_webmanifest_route",
       "src_app_dashboard_kalender_manifest_webmanifest_route_get"
     ],
-    "348": [
+    "347": [
       "src_app_dashboard_onboarding_layout",
       "src_app_dashboard_onboarding_layout_onboardinglayout"
     ],
-    "349": [
+    "348": [
       "src_app_dashboard_personal_layout",
       "src_app_dashboard_personal_layout_stafflayout"
     ],
-    "350": [
+    "349": [
       "src_app_dashboard_personal_tider_error",
       "src_app_dashboard_personal_tider_error_errorstate"
     ],
-    "351": [
+    "350": [
       "src_app_dashboard_personal_tider_loading",
       "src_app_dashboard_personal_tider_loading_loading"
     ],
-    "352": [
+    "351": [
       "src_app_dashboard_uppdrag_layout",
       "src_app_dashboard_uppdrag_layout_servicejobslayout"
     ],
-    "353": [
+    "352": [
       "src_app_en_features_page",
       "src_app_en_features_page_featuresaliaspage"
     ],
-    "354": [
+    "353": [
       "src_app_foretag_listad_publicdirectorysearchform",
       "src_app_foretag_listad_publicdirectorysearchform_publicdirectorysearchform"
     ],
-    "355": [
+    "354": [
       "src_app_funktioner_page",
       "src_app_funktioner_page_featuresaliaspage"
     ],
-    "356": [
+    "355": [
       "src_app_manifest",
       "src_app_manifest_manifest"
     ],
-    "357": [
+    "356": [
       "src_lib_company_directory_engine_publication_test",
       "src_lib_company_directory_engine_publication_test_enginesource"
     ],
-    "358": [
+    "357": [
       "src_lib_company_directory_full_revalidation_sql_test",
       "src_lib_company_directory_full_revalidation_sql_test_revalidationsource"
     ],
-    "359": [
+    "358": [
       "tests_admin_audit_contract_test",
       "tests_admin_audit_contract_test_source"
     ],
-    "360": [
+    "359": [
       "tests_admin_workspace_directory_parameter_types_test",
       "tests_admin_workspace_directory_parameter_types_test_source"
     ],
-    "361": [
+    "360": [
       "tests_ai_services_payments_ux_2_test",
       "tests_ai_services_payments_ux_2_test_source"
     ],
-    "362": [
+    "361": [
       "tests_analytics_consent_responsive_ui_test",
       "tests_analytics_consent_responsive_ui_test_source"
     ],
-    "363": [
+    "362": [
       "tests_booking_builder_fixed_appearance_test",
       "tests_booking_builder_fixed_appearance_test_source"
     ],
-    "364": [
+    "363": [
       "tests_booking_builder_public_sections_test",
       "tests_booking_builder_public_sections_test_source"
     ],
-    "365": [
+    "364": [
       "tests_booking_job_lifecycle_sync_test",
       "tests_booking_job_lifecycle_sync_test_source"
     ],
-    "366": [
+    "365": [
       "tests_booking_management_ux_2_test",
       "tests_booking_management_ux_2_test_source"
     ],
-    "367": [
+    "366": [
       "tests_booking_media_guard_test",
       "tests_booking_media_guard_test_source"
     ],
-    "368": [
+    "367": [
       "tests_booking_page_builder_foundation_test",
       "tests_booking_page_builder_foundation_test_source"
     ],
-    "369": [
+    "368": [
       "tests_booking_polish_final_test",
       "tests_booking_polish_final_test_source"
     ],
-    "370": [
+    "369": [
       "tests_booking_slot_memoization_test",
       "tests_booking_slot_memoization_test_source"
     ],
-    "371": [
+    "370": [
       "tests_booking_ux_v2_contract_test",
       "tests_booking_ux_v2_contract_test_source"
     ],
-    "372": [
+    "371": [
       "tests_calendar_staff_ux_2_test",
       "tests_calendar_staff_ux_2_test_source"
     ],
-    "373": [
+    "372": [
       "tests_ci_governance_live_metadata_test",
       "tests_ci_governance_live_metadata_test_ci"
     ],
-    "374": [
+    "373": [
       "tests_company_directory_admin_guard_test",
       "tests_company_directory_admin_guard_test_guardedpages"
     ],
-    "375": [
+    "374": [
       "tests_company_directory_admin_list_contract_test",
       "tests_company_directory_admin_list_contract_test_source"
     ],
-    "376": [
+    "375": [
       "tests_company_directory_automatic_sync_history_contract_test",
       "tests_company_directory_automatic_sync_history_contract_test_source"
     ],
-    "377": [
+    "376": [
       "tests_company_directory_claim_account_email_gate_test",
       "tests_company_directory_claim_account_email_gate_test_source"
     ],
-    "378": [
+    "377": [
       "tests_company_directory_manual_refresh_contract_test",
       "tests_company_directory_manual_refresh_contract_test_source"
     ],
-    "379": [
+    "378": [
       "tests_company_directory_new_company_priority_contract_test",
       "tests_company_directory_new_company_priority_contract_test_source"
     ],
-    "380": [
+    "379": [
       "tests_company_directory_profile_service_sync_contract_test",
       "tests_company_directory_profile_service_sync_contract_test_source"
     ],
-    "381": [
+    "380": [
       "tests_company_directory_public_profile_conversion_contract_test",
       "tests_company_directory_public_profile_conversion_contract_test_source"
     ],
-    "382": [
+    "381": [
       "tests_company_directory_queue_quarantine_contract_test",
       "tests_company_directory_queue_quarantine_contract_test_source"
     ],
-    "383": [
+    "382": [
       "tests_company_directory_ready_auto_publish_contract_test",
       "tests_company_directory_ready_auto_publish_contract_test_source"
     ],
-    "384": [
+    "383": [
       "tests_customer_profile_ux_2_test",
       "tests_customer_profile_ux_2_test_source"
     ],
-    "385": [
+    "384": [
       "tests_dashboard_booking_create_contract_test",
       "tests_dashboard_booking_create_contract_test_code"
     ],
-    "386": [
+    "385": [
       "tests_dashboard_crm_ux_2_test",
       "tests_dashboard_crm_ux_2_test_source"
     ],
-    "387": [
+    "386": [
       "tests_dashboard_human_ux_contract_test",
       "tests_dashboard_human_ux_contract_test_source"
     ],
-    "388": [
+    "387": [
       "tests_dashboard_secondary_human_ux_contract_test",
       "tests_dashboard_secondary_human_ux_contract_test_source"
     ],
-    "389": [
+    "388": [
       "tests_database_migration_hardening_contract_test",
       "tests_database_migration_hardening_contract_test_readmigration"
     ],
-    "390": [
+    "389": [
       "tests_dependency_specs_test",
       "tests_dependency_specs_test_packagemanifest"
     ],
-    "391": [
+    "390": [
       "tests_design_system_foundation_test",
       "tests_design_system_foundation_test_source"
     ],
-    "392": [
+    "391": [
       "tests_dynamic_media_lint_policy_test",
       "tests_dynamic_media_lint_policy_test_source"
     ],
-    "393": [
+    "392": [
       "tests_golden_lifecycle_contract_test",
       "tests_golden_lifecycle_contract_test_source"
     ],
-    "394": [
+    "393": [
       "tests_marketing_demo_contract_test",
       "tests_marketing_demo_contract_test_source"
     ],
-    "395": [
+    "394": [
       "tests_marketing_home_contract_test",
       "tests_marketing_home_contract_test_source"
     ],
-    "396": [
+    "395": [
       "tests_marketing_industries_contract_test",
       "tests_marketing_industries_contract_test_source"
     ],
-    "397": [
+    "396": [
       "tests_marketing_route_aliases_test",
       "tests_marketing_route_aliases_test_source"
     ],
-    "398": [
+    "397": [
       "tests_marketplace_funnel_observability_test",
       "tests_marketplace_funnel_observability_test_source"
     ],
-    "399": [
+    "398": [
       "tests_marketplace_guest_dispatch_claim_migration_test",
       "tests_marketplace_guest_dispatch_claim_migration_test_migration"
     ],
-    "400": [
+    "399": [
       "tests_minimal_public_booking_polish_test",
       "tests_minimal_public_booking_polish_test_source"
     ],
-    "401": [
+    "400": [
       "tests_onboarding_first_booking_readiness_test",
       "tests_onboarding_first_booking_readiness_test_source"
     ],
-    "402": [
+    "401": [
       "tests_preview_marketplace_email_reader_contract_test",
       "tests_preview_marketplace_email_reader_contract_test_source"
     ],
-    "403": [
+    "402": [
       "tests_preview_marketplace_email_reader_url_contract_test",
       "tests_preview_marketplace_email_reader_url_contract_test_routesource"
     ],
-    "404": [
+    "403": [
       "tests_preview_marketplace_fixture_contract_test",
       "tests_preview_marketplace_fixture_contract_test_source"
     ],
-    "405": [
+    "404": [
       "tests_provider_quote_lifecycle_human_ux_contract_test",
       "tests_provider_quote_lifecycle_human_ux_contract_test_source"
     ],
-    "406": [
+    "405": [
       "tests_public_booking_customer_dedupe_test",
       "tests_public_booking_customer_dedupe_test_source"
     ],
-    "407": [
+    "406": [
       "tests_public_booking_first_available_time_test",
       "tests_public_booking_first_available_time_test_source"
     ],
-    "408": [
+    "407": [
       "tests_public_booking_mobile_ux_contract_test",
       "tests_public_booking_mobile_ux_contract_test_source"
     ],
-    "409": [
+    "408": [
       "tests_public_business_analytics_contract_test",
       "tests_public_business_analytics_contract_test_source"
     ],
-    "410": [
+    "409": [
       "tests_public_business_hub_contract_test",
       "tests_public_business_hub_contract_test_source"
     ],
-    "411": [
+    "410": [
       "tests_public_business_polish_contract_test",
       "tests_public_business_polish_contract_test_source"
     ],
-    "412": [
+    "411": [
       "tests_public_business_seo_contract_test",
       "tests_public_business_seo_contract_test_source"
     ],
-    "413": [
+    "412": [
       "tests_public_experience_ux_2_test",
       "tests_public_experience_ux_2_test_source"
     ],
-    "414": [
+    "413": [
       "tests_public_shell_performance_contract_test",
       "tests_public_shell_performance_contract_test_source"
     ],
-    "415": [
+    "414": [
       "tests_quote_request_directory_journey_contract_test",
       "tests_quote_request_directory_journey_contract_test_source"
     ],
-    "416": [
+    "415": [
       "tests_quotes_jobs_ux_2_test",
       "tests_quotes_jobs_ux_2_test_source"
     ],
-    "417": [
+    "416": [
       "tests_readability_contrast_hardening_test",
       "tests_readability_contrast_hardening_test_source"
     ],
-    "418": [
+    "417": [
       "tests_remaining_public_experience_human_ux_contract_test",
       "tests_remaining_public_experience_human_ux_contract_test_source"
     ],
-    "419": [
+    "418": [
       "tests_review_page_standalone_polish_test",
       "tests_review_page_standalone_polish_test_source"
     ],
-    "420": [
+    "419": [
       "tests_secondary_workspace_ux_2_test",
       "tests_secondary_workspace_ux_2_test_source"
     ],
-    "421": [
+    "420": [
       "tests_self_service_signup_contract_test",
       "tests_self_service_signup_contract_test_source"
     ],
-    "422": [
+    "421": [
       "tests_service_editor_ux_contract_test",
       "tests_service_editor_ux_contract_test_source"
     ],
-    "423": [
+    "422": [
       "tests_settings_mobile_ux_test",
       "tests_settings_mobile_ux_test_source"
     ],
-    "424": [
+    "423": [
       "tests_vercel_preview_deployment_policy_test",
       "tests_vercel_preview_deployment_policy_test_deploymentenabledforbranch"
     ],
-    "425": [
+    "424": [
       "tests_verified_review_email_contract_test",
       "tests_verified_review_email_contract_test_source"
     ],
-    "426": [
+    "425": [
       "tests_verified_review_production_copy_test",
       "tests_verified_review_production_copy_test_source"
     ],
-    "427": [
+    "426": [
       "tests_workspace_central_feature_runtime_test",
       "tests_workspace_central_feature_runtime_test_source"
     ],
-    "428": [
+    "427": [
       "tests_workspace_industry_service_seeding_test",
       "tests_workspace_industry_service_seeding_test_source"
     ],
-    "429": [
+    "428": [
       "tests_workspace_provisioning_full_access_test",
       "tests_workspace_provisioning_full_access_test_source"
     ],
-    "430": [
+    "429": [
       "tests_workspace_quote_offer_flow_test",
       "tests_workspace_quote_offer_flow_test_source"
     ],
-    "431": [
+    "430": [
       "tests_workspace_rls_pilot_contract_test",
       "tests_workspace_rls_pilot_contract_test_readrepofile"
     ],
-    "432": [
+    "431": [
       "tests_workspace_service_job_lifecycle_test",
       "tests_workspace_service_job_lifecycle_test_source"
     ],
-    "433": [
+    "432": [
       "tests_workspace_setup_ux_2_test",
       "tests_workspace_setup_ux_2_test_source"
     ],
-    "434": [
+    "433": [
       "e2e_tests_password_reset_client_e2e"
     ],
-    "435": [
+    "434": [
       "e2e_tests_public_directory_sodertalje_e2e"
     ],
-    "436": [
+    "435": [
       "e2e_tests_public_marketing_e2e"
     ],
-    "437": [
+    "436": [
       "next_env_d"
     ],
-    "438": [
+    "437": [
       "posthog_js_posthog_js"
     ],
-    "439": [
+    "438": [
       "public_sw"
     ],
-    "440": [
+    "439": [
       "react_react"
     ],
-    "441": [
+    "440": [
       "tests_business_profile_location_foundation_contract_test"
     ],
-    "442": [
+    "441": [
       "tests_company_directory_auto_test_scan_contract_test"
     ],
-    "443": [
+    "442": [
       "tests_company_directory_bolagsverket_swagger_contract_test"
     ],
-    "444": [
+    "443": [
       "tests_company_directory_claim_email_freeze_test"
     ],
-    "445": [
+    "444": [
       "tests_company_directory_claim_lease_contract_test"
     ],
-    "446": [
+    "445": [
       "tests_company_directory_claim_publication_guard_test"
     ],
-    "447": [
+    "446": [
       "tests_company_directory_search_preview_contract_test"
     ],
-    "448": [
+    "447": [
       "tests_company_directory_seed_pilot_contract_test"
     ],
-    "449": [
+    "448": [
       "tests_company_directory_service_location_foundation_contract_test"
     ],
-    "450": [
+    "449": [
       "tests_company_directory_zero_cost_contract_test"
     ],
-    "451": [
+    "450": [
       "tests_donis_demo2_test"
     ],
-    "452": [
+    "451": [
       "tests_marketplace_auto_worker_rollout_config_test"
     ],
-    "453": [
+    "452": [
       "tests_restaurant_admin_bilingual_test"
     ],
-    "454": [
+    "453": [
       "tests_restaurant_admin_site_mirror_test"
     ],
-    "455": [
+    "454": [
       "tests_restaurant_cms_source_of_truth_test"
     ],
-    "456": [
+    "455": [
       "tests_restaurant_review_proof_contract_test"
     ],
-    "457": [
+    "456": [
       "tests_server_only_stub"
     ],
-    "458": [
+    "457": [
       "vitest_config"
     ]
   },
@@ -8350,20 +8348,20 @@
     "1": 0.06523855890944498,
     "2": 0.05594679186228482,
     "3": 0.06455399061032864,
-    "4": 0.06418219461697723,
-    "5": 0.06777493606138107,
+    "4": 0.06777493606138107,
+    "5": 0.06540825285338016,
     "6": 0.059227921734531994,
     "7": 0.05552617662612375,
     "8": 0.08461131676361713,
-    "9": 0.15028248587570622,
-    "10": 0.14724310776942356,
-    "11": 0.09899749373433583,
-    "12": 0.06328320802005012,
+    "9": 0.14761040532365396,
+    "10": 0.08469449485783424,
+    "11": 0.14724310776942356,
+    "12": 0.09899749373433583,
     "13": 0.06328320802005012,
-    "14": 0.08506493506493507,
-    "15": 0.09154437456324249,
-    "16": 0.07910014513788098,
-    "17": 0.13046757164404224,
+    "14": 0.06328320802005012,
+    "15": 0.08506493506493507,
+    "16": 0.1264849755415793,
+    "17": 0.07910014513788098,
     "18": 0.0784313725490196,
     "19": 0.058823529411764705,
     "20": 0.08862745098039215,
@@ -8381,43 +8379,43 @@
     "32": 0.13178294573643412,
     "33": 0.08748615725359911,
     "34": 0.0859465737514518,
-    "35": 0.07084785133565621,
-    "36": 0.12682926829268293,
-    "37": 0.11153846153846154,
-    "38": 0.1064102564102564,
-    "39": 0.09358974358974359,
-    "40": 0.09102564102564102,
-    "41": 0.08076923076923077,
-    "42": 0.10384615384615385,
-    "43": 0.11740890688259109,
-    "44": 0.08502024291497975,
-    "45": 0.09176788124156546,
-    "46": 0.08771929824561403,
-    "47": 0.07017543859649122,
-    "48": 0.10099573257467995,
-    "49": 0.10526315789473684,
-    "50": 0.1006006006006006,
-    "51": 0.08858858858858859,
-    "52": 0.10793650793650794,
-    "53": 0.09523809523809523,
-    "54": 0.0746031746031746,
-    "55": 0.12698412698412698,
-    "56": 0.10952380952380952,
-    "57": 0.1495798319327731,
-    "58": 0.11932773109243698,
-    "59": 0.10252100840336134,
-    "60": 0.08907563025210084,
-    "61": 0.11764705882352941,
-    "62": 0.11586452762923351,
-    "63": 0.11942959001782531,
-    "64": 0.1140819964349376,
-    "65": 0.0855614973262032,
-    "66": 0.10873440285204991,
-    "67": 0.0928030303030303,
-    "68": 0.10606060606060606,
-    "69": 0.08143939393939394,
-    "70": 0.0946969696969697,
-    "71": 0.10483870967741936,
+    "35": 0.08013937282229965,
+    "36": 0.07084785133565621,
+    "37": 0.12682926829268293,
+    "38": 0.11153846153846154,
+    "39": 0.1064102564102564,
+    "40": 0.09358974358974359,
+    "41": 0.09102564102564102,
+    "42": 0.08076923076923077,
+    "43": 0.10384615384615385,
+    "44": 0.11740890688259109,
+    "45": 0.08502024291497975,
+    "46": 0.09176788124156546,
+    "47": 0.08771929824561403,
+    "48": 0.07017543859649122,
+    "49": 0.10099573257467995,
+    "50": 0.10526315789473684,
+    "51": 0.1006006006006006,
+    "52": 0.08858858858858859,
+    "53": 0.10793650793650794,
+    "54": 0.09523809523809523,
+    "55": 0.0746031746031746,
+    "56": 0.12698412698412698,
+    "57": 0.10952380952380952,
+    "58": 0.1495798319327731,
+    "59": 0.11932773109243698,
+    "60": 0.10252100840336134,
+    "61": 0.08907563025210084,
+    "62": 0.11764705882352941,
+    "63": 0.11586452762923351,
+    "64": 0.11942959001782531,
+    "65": 0.1140819964349376,
+    "66": 0.0855614973262032,
+    "67": 0.10873440285204991,
+    "68": 0.0928030303030303,
+    "69": 0.10606060606060606,
+    "70": 0.08143939393939394,
+    "71": 0.0946969696969697,
     "72": 0.10080645161290322,
     "73": 0.16330645161290322,
     "74": 0.10483870967741936,
@@ -8485,36 +8483,36 @@
     "136": 0.14130434782608695,
     "137": 0.08695652173913043,
     "138": 0.14624505928853754,
-    "139": 0.16205533596837945,
-    "140": 0.13043478260869565,
-    "141": 0.11857707509881422,
-    "142": 0.11067193675889328,
-    "143": 0.16996047430830039,
-    "144": 0.1541501976284585,
-    "145": 0.1383399209486166,
-    "146": 0.17316017316017315,
-    "147": 0.12987012987012986,
-    "148": 0.09523809523809523,
-    "149": 0.13333333333333333,
-    "150": 0.1523809523809524,
-    "151": 0.17142857142857143,
-    "152": 0.15714285714285714,
-    "153": 0.2,
-    "154": 0.1,
-    "155": 0.3,
-    "156": 0.18421052631578946,
-    "157": 0.2736842105263158,
-    "158": 0.1368421052631579,
-    "159": 0.17894736842105263,
-    "160": 0.12280701754385964,
-    "161": 0.2573099415204678,
-    "162": 0.15204678362573099,
-    "163": 0.17543859649122806,
-    "164": 0.1286549707602339,
-    "165": 0.19298245614035087,
-    "166": 0.14035087719298245,
-    "167": 0.18128654970760233,
-    "168": 0.19607843137254902,
+    "139": 0.13043478260869565,
+    "140": 0.11857707509881422,
+    "141": 0.11067193675889328,
+    "142": 0.16996047430830039,
+    "143": 0.1541501976284585,
+    "144": 0.1383399209486166,
+    "145": 0.17316017316017315,
+    "146": 0.12987012987012986,
+    "147": 0.09523809523809523,
+    "148": 0.13333333333333333,
+    "149": 0.1523809523809524,
+    "150": 0.17142857142857143,
+    "151": 0.15714285714285714,
+    "152": 0.2,
+    "153": 0.1,
+    "154": 0.3,
+    "155": 0.18421052631578946,
+    "156": 0.2736842105263158,
+    "157": 0.1368421052631579,
+    "158": 0.17894736842105263,
+    "159": 0.12280701754385964,
+    "160": 0.2573099415204678,
+    "161": 0.15204678362573099,
+    "162": 0.17543859649122806,
+    "163": 0.1286549707602339,
+    "164": 0.19298245614035087,
+    "165": 0.14035087719298245,
+    "166": 0.18128654970760233,
+    "167": 0.19607843137254902,
+    "168": 0.22875816993464052,
     "169": 0.16993464052287582,
     "170": 0.1111111111111111,
     "171": 0.16339869281045752,
@@ -8525,36 +8523,36 @@
     "176": 0.14705882352941177,
     "177": 0.18382352941176472,
     "178": 0.23333333333333334,
-    "179": 0.21666666666666667,
-    "180": 0.15,
-    "181": 0.2,
-    "182": 0.15,
-    "183": 0.225,
-    "184": 0.18333333333333332,
-    "185": 0.13333333333333333,
-    "186": 0.175,
-    "187": 0.26666666666666666,
-    "188": 0.16666666666666666,
-    "189": 0.2571428571428571,
-    "190": 0.2,
-    "191": 0.2571428571428571,
-    "192": 0.21904761904761905,
-    "193": 0.2857142857142857,
-    "194": 0.22857142857142856,
-    "195": 0.2087912087912088,
-    "196": 0.26373626373626374,
-    "197": 0.23076923076923078,
-    "198": 0.24175824175824176,
-    "199": 0.1978021978021978,
-    "200": 0.23076923076923078,
-    "201": 0.14285714285714285,
-    "202": 0.2087912087912088,
-    "203": 0.14285714285714285,
-    "204": 0.15384615384615385,
-    "205": 0.21794871794871795,
-    "206": 0.15384615384615385,
-    "207": 0.19230769230769232,
-    "208": 0.30303030303030304,
+    "179": 0.20833333333333334,
+    "180": 0.21666666666666667,
+    "181": 0.15,
+    "182": 0.2,
+    "183": 0.15,
+    "184": 0.225,
+    "185": 0.18333333333333332,
+    "186": 0.13333333333333333,
+    "187": 0.175,
+    "188": 0.26666666666666666,
+    "189": 0.16666666666666666,
+    "190": 0.2571428571428571,
+    "191": 0.2,
+    "192": 0.2571428571428571,
+    "193": 0.21904761904761905,
+    "194": 0.2857142857142857,
+    "195": 0.22857142857142856,
+    "196": 0.2087912087912088,
+    "197": 0.26373626373626374,
+    "198": 0.23076923076923078,
+    "199": 0.24175824175824176,
+    "200": 0.1978021978021978,
+    "201": 0.23076923076923078,
+    "202": 0.14285714285714285,
+    "203": 0.2087912087912088,
+    "204": 0.14285714285714285,
+    "205": 0.15384615384615385,
+    "206": 0.21794871794871795,
+    "207": 0.15384615384615385,
+    "208": 0.19230769230769232,
     "209": 0.30303030303030304,
     "210": 0.2909090909090909,
     "211": 0.21818181818181817,
@@ -8568,85 +8566,85 @@
     "219": 0.18181818181818182,
     "220": 0.2,
     "221": 0.18181818181818182,
-    "222": 0.3333333333333333,
-    "223": 0.24444444444444444,
-    "224": 0.26666666666666666,
+    "222": 0.24444444444444444,
+    "223": 0.26666666666666666,
+    "224": 0.24444444444444444,
     "225": 0.24444444444444444,
-    "226": 0.24444444444444444,
-    "227": 0.28888888888888886,
-    "228": 0.26666666666666666,
-    "229": 0.2222222222222222,
-    "230": 0.28888888888888886,
+    "226": 0.28888888888888886,
+    "227": 0.26666666666666666,
+    "228": 0.2222222222222222,
+    "229": 0.28888888888888886,
+    "230": 0.2222222222222222,
     "231": 0.2222222222222222,
-    "232": 0.2222222222222222,
+    "232": 0.2,
     "233": 0.2,
-    "234": 0.2,
-    "235": 0.2222222222222222,
+    "234": 0.2222222222222222,
+    "235": 0.3055555555555556,
     "236": 0.3055555555555556,
-    "237": 0.3055555555555556,
+    "237": 0.2777777777777778,
     "238": 0.2777777777777778,
-    "239": 0.2777777777777778,
+    "239": 0.25,
     "240": 0.25,
-    "241": 0.25,
-    "242": 0.3333333333333333,
+    "241": 0.3333333333333333,
+    "242": 0.3055555555555556,
     "243": 0.3055555555555556,
     "244": 0.3055555555555556,
-    "245": 0.3055555555555556,
-    "246": 0.2777777777777778,
-    "247": 0.25,
-    "248": 0.35714285714285715,
-    "249": 0.39285714285714285,
-    "250": 0.42857142857142855,
+    "245": 0.2777777777777778,
+    "246": 0.25,
+    "247": 0.39285714285714285,
+    "248": 0.42857142857142855,
+    "249": 0.25,
+    "250": 0.25,
     "251": 0.25,
-    "252": 0.25,
-    "253": 0.25,
-    "254": 0.2857142857142857,
-    "255": 0.42857142857142855,
-    "256": 0.5714285714285714,
-    "257": 0.3333333333333333,
-    "258": 0.3333333333333333,
-    "259": 0.42857142857142855,
-    "260": 0.3333333333333333,
+    "252": 0.2857142857142857,
+    "253": 0.42857142857142855,
+    "254": 0.5714285714285714,
+    "255": 0.3333333333333333,
+    "256": 0.3333333333333333,
+    "257": 0.47619047619047616,
+    "258": 0.42857142857142855,
+    "259": 0.3333333333333333,
+    "260": 0.2857142857142857,
     "261": 0.2857142857142857,
-    "262": 0.2857142857142857,
-    "263": 0.3333333333333333,
-    "264": 0.2857142857142857,
-    "265": 0.38095238095238093,
-    "266": 0.2857142857142857,
-    "267": 0.38095238095238093,
-    "268": 0.2857142857142857,
-    "269": 0.42857142857142855,
-    "270": 0.5333333333333333,
-    "271": 0.4666666666666667,
+    "262": 0.3333333333333333,
+    "263": 0.2857142857142857,
+    "264": 0.38095238095238093,
+    "265": 0.2857142857142857,
+    "266": 0.38095238095238093,
+    "267": 0.2857142857142857,
+    "268": 0.42857142857142855,
+    "269": 0.5333333333333333,
+    "270": 0.4666666666666667,
+    "271": 0.3333333333333333,
     "272": 0.3333333333333333,
-    "273": 0.3333333333333333,
+    "273": 0.4,
     "274": 0.4,
-    "275": 0.4,
-    "276": 0.3333333333333333,
-    "277": 0.4666666666666667,
-    "278": 0.3333333333333333,
-    "279": 0.4,
+    "275": 0.3333333333333333,
+    "276": 0.4666666666666667,
+    "277": 0.3333333333333333,
+    "278": 0.4,
+    "279": 0.3333333333333333,
     "280": 0.3333333333333333,
     "281": 0.3333333333333333,
     "282": 0.3333333333333333,
-    "283": 0.3333333333333333,
-    "284": 0.4,
-    "285": 0.5,
-    "286": 0.4,
+    "283": 0.4,
+    "284": 0.5,
+    "285": 0.4,
+    "286": 0.5,
     "287": 0.5,
-    "288": 0.5,
+    "288": 0.4,
     "289": 0.4,
     "290": 0.4,
-    "291": 0.4,
-    "292": 0.5,
-    "293": 0.4,
+    "291": 0.5,
+    "292": 0.4,
+    "293": 0.5,
     "294": 0.5,
-    "295": 0.5,
-    "296": 0.6666666666666666,
+    "295": 0.6666666666666666,
+    "296": 0.5,
     "297": 0.5,
     "298": 0.5,
-    "299": 0.5,
-    "300": 0.6666666666666666,
+    "299": 0.6666666666666666,
+    "300": 0.5,
     "301": 0.5,
     "302": 0.5,
     "303": 0.5,
@@ -8656,7 +8654,7 @@
     "307": 0.5,
     "308": 0.5,
     "309": 0.5,
-    "310": 0.5,
+    "310": 0.6666666666666666,
     "311": 0.6666666666666666,
     "312": 0.6666666666666666,
     "313": 0.6666666666666666,
@@ -8671,7 +8669,7 @@
     "322": 0.6666666666666666,
     "323": 0.6666666666666666,
     "324": 0.6666666666666666,
-    "325": 0.6666666666666666,
+    "325": 1.0,
     "326": 1.0,
     "327": 1.0,
     "328": 1.0,
@@ -8803,8 +8801,7 @@
     "454": 1.0,
     "455": 1.0,
     "456": 1.0,
-    "457": 1.0,
-    "458": 1.0
+    "457": 1.0
   },
   "gods": [
     {
@@ -8860,28 +8857,6 @@
   ],
   "surprises": [
     {
-      "source": "canonicalBody()",
-      "target": "repository()",
-      "source_files": [
-        "tests/supervisor-failure-memory-workflow-transport.test.ts",
-        "scripts/supervisor-failure-memory.mjs"
-      ],
-      "confidence": "INFERRED",
-      "relation": "indirect_call",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "expectCanonicalDirectTransport()",
-      "target": "repository()",
-      "source_files": [
-        "tests/supervisor-failure-memory-workflow-transport.test.ts",
-        "scripts/supervisor-failure-memory.mjs"
-      ],
-      "confidence": "INFERRED",
-      "relation": "indirect_call",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
-    },
-    {
       "source": "readAll()",
       "target": "readTrustedMemories()",
       "source_files": [
@@ -8913,6 +8888,28 @@
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "connects across different repos/directories; bridges separate communities; peripheral node `currentClaim()` unexpectedly reaches hub `parseClaimEmailEvidence()`"
+    },
+    {
+      "source": "inputHarness()",
+      "target": "parseRestaurantPrice()",
+      "source_files": [
+        "tests/restaurant-price-busy.test.ts",
+        "src/lib/restaurant-price.ts"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `inputHarness()` unexpectedly reaches hub `parseRestaurantPrice()`"
+    },
+    {
+      "source": "start()",
+      "target": "ciAutofixStrategyDescriptor()",
+      "source_files": [
+        "tests/supervisor-ci-autofix-strategy-history.test.ts",
+        "scripts/supervisor-ci-autofix-strategy-memory.mjs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `start()` unexpectedly reaches hub `ciAutofixStrategyDescriptor()`"
     }
   ],
   "tokens": {
