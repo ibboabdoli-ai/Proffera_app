@@ -46,6 +46,7 @@ Confirm each flow is reachable:
 | Services -> Service detail        | Tap any service card in Tjänster        | [ ]  |
 | Services -> Service detail -> Booking | Tap "Boka demo" on detail screen   | [ ]  |
 | Prices -> Booking                 | Tap "Kontakta oss" on any plan          | [ ]  |
+| Booking -> Demo confirmation       | Tap "Visa demobekräftelse"; no request is sent | [ ] |
 | Info -> Contact                   | Tap "Kontakta oss" on InfoScreen        | [ ]  |
 | Konto -> Settings                 | Tap "Inställningar" on MyAccountScreen  | [ ]  |
 | Back navigation                   | Hardware back / swipe back on all screens | [ ] |

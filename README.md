@@ -17,7 +17,7 @@ This is a UI prototype only.
 - Expo SDK 54 is installed.
 - Expo Go device test has passed on iPhone.
 - Main branch is the stable branch.
-- Booking submit remains disabled.
+- Booking submit remains disabled; the separate demo confirmation is reachable without sending data.
 - No backend, API, auth, payment, or email functionality is enabled from the mobile app.
 
 ## Project Paths
@@ -63,7 +63,9 @@ More details: docs/mobile-run-guide.md
 Run:
 npm.cmd ci
 npx.cmd expo install --check
-npx.cmd tsc --noEmit
+npm.cmd run typecheck
+npm.cmd run lint
+npx.cmd expo-doctor
 
 Expected: 0 TypeScript errors.
 
