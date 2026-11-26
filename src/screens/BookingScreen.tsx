@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { HomeStackParamList } from '../navigation/AppNavigator';
 import { colors } from '../theme/colors';
 import Screen from '../components/Screen';
@@ -9,8 +10,10 @@ import Card from '../components/Card';
 import AppButton from '../components/AppButton';
 
 type Route = RouteProp<HomeStackParamList, 'Booking'>;
+type Nav = NativeStackNavigationProp<HomeStackParamList, 'Booking'>;
 
 export default function BookingScreen() {
+  const navigation = useNavigation<Nav>();
   const { serviceName } = useRoute<Route>().params ?? { serviceName: 'Demo' };
 
   const [name, setName]       = useState('');
@@ -33,6 +36,13 @@ export default function BookingScreen() {
       <AppButton
         label="Skicka förfrågan – kommer snart"
         variant="disabled"
+        style={{ marginBottom: 10 }}
+      />
+
+      <AppButton
+        label="Visa demobekräftelse"
+        variant="outline"
+        onPress={() => navigation.navigate('Confirmation')}
         style={{ marginBottom: 10 }}
       />
 

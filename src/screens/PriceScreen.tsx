@@ -21,7 +21,7 @@ const plans = [
   {
     id: 'professional',
     name: 'Professional',
-    price: 'Från 699 kr/mån',
+    price: 'Från 599 kr/mån',
     tagline: 'För växande företag som vill samla leads, kunder och AI-stöd i ett system.',
     features: ['Allt i Starter', 'AI-chatt', 'CRM', 'Analysöversikt', 'Automatiska bekräftelser'],
     highlight: true,

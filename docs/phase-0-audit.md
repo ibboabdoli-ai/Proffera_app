@@ -1,130 +1,41 @@
-# Phase 0 Audit — Proffera App
+# Phase 0 audit — Proffera mobile app
 
-**Date:** 2026-06-24  
-**Auditor:** Claude (Senior React Native / Expo Engineer)  
-**Branch:** work/phase-0-1  
-**Status:** READ-ONLY — No code written, no API calls made
+Updated 2026-11-26 against `ibboabdoli-ai/Proffera_app` main `8d9edd7fbcecd9fa96ce33fc6d6057389759bba3`. This is a source audit, not a production or device certification.
 
----
+## Repository and history
 
-## 1. What Was Inspected
+| Repository | Role observed |
+| --- | --- |
+| `ibboabdoli-ai/Proffera_app` | Proffera Expo/React Native TypeScript prototype; the mobile source of truth. |
+| `ibboabdoli-ai/iboren-app` | Separate Iboren Expo app with its own booking work. Do not reuse its identity or booking integration for Proffera. |
+| `ibboabdoli-ai/Proffera` | Production Next.js website and backend. Read-only for this mobile phase. |
 
-- Website repo: https://github.com/ibboabdoli-ai/Proffera (README, folder structure)
-- Live site: https://proffera.se (homepage, /priser, /villkor)
-- Developer skill: `/mnt/skills/user/proffera-developer/SKILL.md`
-- App repo: https://github.com/ibboabdoli-ai/Proffera_app — **does not exist yet** (404)
+PR #1 in `Proffera_app` was merged and included an Expo app, navigation, screens, and the original audit. The earlier claim that it contained only a status file is false for this repository. Subsequent merged PRs reached Expo SDK 54 and an iPhone Expo Go smoke test. The old audit's statements that the app repository did not exist and Better Auth was inactive are obsolete.
 
----
+## Architecture and Phase 1 inventory
 
-## 2. API Endpoint Analysis
+`App.tsx` mounts `SafeAreaProvider` and `AppNavigator`. React Navigation has five tabs (Hem, Tjänster, Priser, Info, Konto) with native stacks. The ten implemented screen files are Home, Services, ServiceDetail, Price, Booking, Confirmation, Contact, Info, MyAccount, and Settings. Shared `Screen`, `Card`, and `AppButton` components and `src/theme/colors.ts` style the prototype.
 
-### Finding
+The documented routes are Home/Services → ServiceDetail → Booking, Prices → Booking, Info → Contact, and Account → Settings. The Booking submit action remains disabled. Before this follow-up, Confirmation was registered but had no reachable action; the separate demo-confirmation link makes that screen reachable without submitting data. This is a demonstration route, not a booking result.
 
-No public REST API was found exposed by the website repo. The website is a Next.js App Router project using:
-- Server Actions (not REST endpoints)
-- Internal API routes under `/src/app/api/` (not publicly documented)
-- Neon/Postgres via `@neondatabase/serverless` (server-side only)
-- Brevo for email delivery (server-side only)
+The supplied historical context mentions 11 planned screens. PR #1 explicitly described ten screens; current source and documentation also identify ten. A named eleventh screen or approved specification was not found in these repositories. Do not create one from a guess.
 
-### Conclusion
+## Data, authentication, and tenant boundaries
 
-**There is NO public API available for Phase 1.**
+- The mobile `src/` contains no `fetch`, API client, Better Auth integration, session manager, token store, or workspace selector. Displayed data and form state are local prototype data. There are no mobile production API calls or write actions to test.
+- The website uses Better Auth at `/api/auth/[...all]` and derives workspace access server-side from the session and membership. Its selected-workspace cookie is `proffera_workspace_id`. Those web cookie/session contracts are not yet a reviewed native-app authentication contract.
+- Do not copy web session cookies into unreviewed native storage, accept a client-supplied workspace as authority, put secrets in `app.json`/Expo public variables, or connect booking/contact/payment actions before a scoped API and mobile auth design are approved. A future session implementation needs OS-backed secure storage, logout/revocation handling, and server-side workspace membership checks.
 
-The booking flow (`/api/booking/route.ts` if it exists) is an internal Next.js API route protected behind the site's middleware. It is NOT a documented public API.
+## Android, iOS, dependencies, and CI
 
-| Field | Value |
-|---|---|
-| Endpoint path | Unknown — not publicly documented |
-| Request payload | Unknown — not publicly documented |
-| Response shape | Unknown — not publicly documented |
-| Auth requirements | Unknown — Better Auth installed but not active |
-| Rate limits | Not visible |
+- `app.json` names `se.proffera.app` for both platforms. Expo SDK 54 is configured. The recorded iPhone Expo Go test is from 2026-06-24; no current device or Android runtime result is recorded here. Store builds are not configured or verified.
+- `npm audit --json` initially reported 34 findings, including critical advisories in `shell-quote` and `tar`. The SDK 54 compatibility updates reduced the count to 26. A subsequent lockfile update moved the only `shell-quote` copy, pulled in by `react-native → react-devtools-core`, from 1.8.4 to 1.12.0 within the existing dependency range. The follow-up audit no longer listed `shell-quote` and reported 25 findings, with 13 high, 12 moderate, and zero critical. The remaining findings still need review.
+- The baseline `npx tsc --noEmit` passed. The initial `npm run lint` lacked an ESLint config, and Expo Doctor initially failed four of 18 checks. This follow-up added SDK-compatible `expo-font`, aligned Expo patch versions, and configured Expo ESLint. `npm run typecheck` and `npm run lint` pass; Expo Doctor passes 18/18 checks. Metro started offline and served HTTP 200 bundles for both Android and iOS. No emulator or physical device was available in this session; tap-through navigation smoke and native runtime behavior were not verified. The only checked-in workflow is a Graphify cache workflow; there is no mobile test/build CI gate. There is no unit-test script or suite.
 
-### Live API call made? **NO**
+## Branding and current-content drift
 
----
+The checked-in theme uses a dark navy/blue palette, while `app.json` and `docs/phase-4-branding.md` specify green and a light neutral background. A deliberate visual decision and device review are needed before changing the full theme. The app's old Professional price of 699 SEK/month differs from the website's canonical 599 SEK/month in `src/lib/billing-plans.ts`; this follow-up corrects the displayed prototype price. Mobile copy remains a snapshot and must be checked before any public release.
 
-## 3. Pricing / Calculator Logic
+## Phase status and next gate
 
-From the live `/priser` page:
-
-| Plan | Price | Key features |
-|---|---|---|
-| Starter | Från 299 kr/mån | Bokningsflöde, e-postnotiser, kontaktformulär, grundläggande leadlista |
-| Professional | Från 699 kr/mån | Allt i Starter + AI-chatt, CRM, analysöversikt, automatiska bekräftelser |
-| Business | Offert | Allt i Professional + prioriterad support, flera platser, anpassade integrationer |
-
-- **Source file:** Not found publicly (likely in `src/app/priser/page.tsx`)
-- **Can it be copied safely?** Yes — pricing data is static/public. Can be hardcoded as constants in the app.
-- **Dependencies:** None. It's static display data.
-
----
-
-## 4. Legal / Copy Text (must be used as-is)
-
-From https://proffera.se/villkor:
-
-```
-Obs: detta är preliminära MVP-villkor och bör juridiskt granskas 
-innan större publik lansering.
-```
-
-This disclaimer MUST appear verbatim on any legal/villkor screen in the app.
-
-Footer copyright: `© 2026 Proffera. Alla rättigheter förbehållna.`
-
----
-
-## 5. Module Status (from live site + skill)
-
-| Module | Status |
-|---|---|
-| Onlinebokning | Aktiv |
-| Kund-CRM | Aktiv |
-| AI-chattassistent | Planerad |
-| Automatiska mejl | Planerad |
-| QR-bokning | Låst |
-
----
-
-## 6. Does Phase 1 Need a Backend?
-
-**NO.** Phase 1 is a navigation prototype with:
-- Static placeholder content
-- No real API calls
-- No auth
-- Disabled booking submit button
-
-No backend work is needed or permitted for Phase 1.
-
----
-
-## 7. Risks Found
-
-| Risk | Severity | Note |
-|---|---|---|
-| App repo does not exist on GitHub | Medium | Must be created manually or via GitHub UI before `git push` |
-| No public API documented | Low for Phase 1 | Phase 2 must define API contract before connecting BookingScreen |
-| Better Auth not yet active on website | Low | Phase 2 login flow blocked until auth is live on backend |
-| Pricing marked "preliminary" in villkor | Low | App must show same disclaimer |
-
----
-
-## 8. Recommendations for Phase 2
-
-1. **Define a public API contract** — at minimum a `POST /api/demo-request` or `POST /api/booking` endpoint with documented payload/response before app connects
-2. **Create GitHub repo** `ibboabdoli-ai/Proffera_app` before pushing
-3. **Auth strategy** — decide if app uses same Better Auth session or a separate mobile token flow
-4. **Do NOT connect BookingScreen submit** until API contract is approved
-
----
-
-## Confirmation Checklist
-
-- [x] Website repo inspected (read-only)
-- [x] Live site inspected (read-only)
-- [x] No API call made to production
-- [x] No booking, order, or transaction created
-- [x] No email or notification sent
-- [x] Website repo NOT modified
-- [x] Auth, payment, email logic NOT touched
+Phase 0 source/security audit is updated. Phase 1 Expo TypeScript foundation and navigation prototype exist, with all ten documented screens reachable after the demo link. Live authentication, API integration, real workspace data, booking submission, payment, email, and SMS remain out of scope. Before a functional customer release, define and review the mobile auth/API contract, prove tenant isolation in an isolated environment, resolve reachable dependency advisories, establish lint/test/CI, and run fresh iOS and Android device checks. Do not use a store build or production endpoint as the first test of these boundaries.
